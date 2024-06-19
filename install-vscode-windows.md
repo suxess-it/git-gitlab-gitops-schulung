@@ -1,4 +1,4 @@
-# VSCode installieren
+# VSCode unter Windows installieren
 
 https://code.visualstudio.com/docs/setup/windows aufrufen
 
