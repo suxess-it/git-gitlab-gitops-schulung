@@ -30,17 +30,17 @@ und wechseln auf die "git bash":
 
 Dann führen wir das erste Mal "git status" aus:
 
-```
-$ git status
+```bash
+git status
 ```
 
 ![image](https://github.com/suxess-it/git-gitlab-gitops-schulung/assets/11465610/a55caf16-23ea-4283-a910-3aef16bdabe8)
 
 Wir fügen mit "git add" das neu erstellte File dem Repository hinzu (wir "stagen" das File), und werden anschließend diesen Stand "commitieren".
 
-```
-$ git add dasisteinfile.txt
-$ git commit
+```bash
+git add dasisteinfile.txt
+git commit
 ```
 
 Jetzt startet sich ein Editor ("vi") wo man seine Commit-Message eingeben muss, dann mit ESC in den Command-Modus gehen muss, und dann mit ":x" den Editor beenden:
@@ -49,14 +49,15 @@ Jetzt startet sich ein Editor ("vi") wo man seine Commit-Message eingeben muss, 
 
 Weil das relativ mühsam ist so, werden wir in Zukunft bei jedem "git commit" auch gleich die Commit-Message mitangeben:
 
-```
-$ git commit -m "dieses file ist enorm wichtig!"
+```bash
+git commit -m "dieses file ist enorm wichtig!"
 ```
 
 Jetzt kann man wieder "git status" eingeben um den Zustand des Repositories zu sehen:
 
-```
-$  git status
+```bash
+git status
+
 On branch main
 nothing to commit, working tree clean
 ```
