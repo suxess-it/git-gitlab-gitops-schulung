@@ -43,7 +43,7 @@ $ git add dasisteinfile.txt
 $ git commit
 ```
 
-Jetzt startet sich ein Editor ("vi") wo man seine Commit-Message eingeben muss, und dann mit ":x" beendet werden muss:
+Jetzt startet sich ein Editor ("vi") wo man seine Commit-Message eingeben muss, dann mit ESC in den Command-Modus gehen muss, und dann mit ":x" den Editor beenden:
 
 ![image](https://github.com/suxess-it/git-gitlab-gitops-schulung/assets/11465610/29f76202-64f9-477d-b9cb-ebff5a16357c)
 
