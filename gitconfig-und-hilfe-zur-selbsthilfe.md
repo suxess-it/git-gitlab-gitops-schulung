@@ -42,13 +42,15 @@ $ git config user.name
 ```
 
 
-# Autovervollständigung
+# Hilfe zur Selbsthilfe
 
-Sollte schon automatisch funktionieren.
-Dazu einfach mal mit <tab><tab> probieren
+## Autovervollständigung
+
+Wie bei vielen Befehlen üblich, sollte auch für git eine Autovervollständigung automatisch zur Verfügung stehen.<br>
+Dazu einfach mal mit <tab><tab> probieren.
 
 ```bash
-git <tab><tab>
+$ git <tab><tab>
 
 Display all 70 possibilities? (y or n)
 add                          clean                        gitk                         pull                         send-email
@@ -63,3 +65,17 @@ branch                       difftool                     maintenance           
 bundle                       fetch                        merge                        reset                        switch
 checkout                     flow                         mergetool                    restore                      tag
 ```
+
+Die Autovervollständigung funktioniert auch innerhalb eines bestimmten Befehls.
+Wenn ihr z.B. Dateien habt, die noch nicht getrackt werden, werden  euch bei "git add <tab><tab>" genau diese Dateien vorgeschlagen.
+
+```bash
+$ touch neuesfile1
+$ touch neuesfile2
+$ git add <tab><tab>
+neuesfile1  neuesfile2
+```
+
+## Hilfe anzeigen lassen
+
+Mit "--help" als Command-Parameter wird die entsprechende Hilfe angezeigt. "git --help" zeigt die gängisten Commands", mit "git <command> --help" wird die Hilfe für den Command angezeigt (direkt in der Shell oder eine Webseite geöffnet).
