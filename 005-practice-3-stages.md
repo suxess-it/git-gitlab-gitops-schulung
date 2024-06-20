@@ -174,3 +174,54 @@ $ echo "das ist noch ein test" >> neues-file.txt
 ```
 
 Die nächsten Befehle um das File bis in das Git-Repository zu bringen, darfst du jetzt selbst herausfinden.
+
+
+# Bereits getrackte Files löschen
+
+Um Files im Git-Repository zu löschen, kann man mit folgendem Befehl das File gleichzeitig aus dem Working-Directory und der Staging-Area löschen:
+
+```bash
+$ git rm dasisteinfile.txt
+rm 'dasisteinfile.txt'
+```
+
+Dann zeigt `git status` bereits an, dass man diese Änderungen committen kann.
+
+```bash
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    dasisteinfile.txt
+```
+
+Auch im Working-Directory und in der Staging-Area ist das File nicht mehr vorhanden:
+
+Working-Directory:
+```bash
+$ ls
+neues-file.txt
+```
+
+Staging-Area:
+```bash
+$ git ls-files -s
+100644 d01e542adf015d6e7eaca9a08812a8f6b0ba7f24 0       neues-file.txt
+```
+
+Jetzt kann die Änderung committiert werden, damit das File auch im Git-Repository verschwinden.
+
+```bash
+$ git commit -m "das file gefällt mir nicht mehr"
+[main 21dd03d] das file gefällt mir nicht mehr
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 dasisteinfile.txt
+```
+
+Kontrolle:
+```bash
+$ git ls-tree -r main
+100644 blob d01e542adf015d6e7eaca9a08812a8f6b0ba7f24    neues-file.txt
+```
+
+Natürlich ist das File nur im aktuellsten Commit verschwunden. In den früheren Commits ist es natürlich noch vorhanden.
