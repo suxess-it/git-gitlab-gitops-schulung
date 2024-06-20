@@ -1,6 +1,46 @@
 # Globale Konfiguration
 
-tbd
+## Deine Identität
+
+Nachdem du Git installiert hast, solltest du als allererstes deinen Namen und deine E-Mail-Adresse in Git konfigurieren. Das ist insofern wichtig, da jeder Git-Commit diese Informationen verwendet und sie unveränderlich in die Commits eingearbeitet werden, die du erstellst:
+
+```bash
+$ git config --global user.name "Erika Musterfrau"
+$ git config --global user.email erika@musterfrau.com
+```
+
+Wichtig: es hindert dich niemand daran hier irgeneinen x-beliebigen Namen einzugeben. Er muss auch nicht mit dem Namen übereinstimmen, der sich dann im Gitlab anmeldet.
+Um die Identität wirklich nachzuweisen können die Commits mit einem GPG-Schlüssel signiert werden, dazu aber erst später.
+
+## Konfigurationsebenen
+
+Konfigurationen können auf unterschiedlichen Ebenen gesetzt werden.
+
+- Global für den User: in .gitconfig im Home-Verzeichnis (Parameter `--global`)
+- Pro Repository (default): im .git/config im Repository (Parameter `--local`)
+- Systemweit: in etc/gitconfig der Git-Installation (Parameter `--system`)
+- Worktree: kann ignoriert werden (Spezialfall)
+  
+## Konfigurationen ansehen
+
+Mit folgendem Befehl sieht man welche Konfigurationen gesetzt sind und wo sie gesetzt wurden (auf welcher Ebene):
+
+```bash
+$ git config --list --show-origin
+```
+
+oder nur die Konfigurationen:
+
+```bash
+$ git config --list
+```
+
+oder ein bestimmter Wert:
+
+```bash
+$ git config user.name
+```
+
 
 # Autovervollständigung
 
