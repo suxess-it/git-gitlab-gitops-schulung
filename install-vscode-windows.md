@@ -13,7 +13,7 @@ Anschließend "git-cmd.exe" oder "git-bash.exe" neu öffnen und einfach "code" i
 
 Falls sich VSCode nicht öffnen, dann vlt PC durchstarten damit VSCode im Pfad ist
 
-# VSCode in git-bash oder git-cmd starten
+# Erste Tests von git-bash, Git und VSCode
 
 Um sicherzustellen dass die Tools funktionieren bitte mal testweise folgende Befehle aufrufen.
 
@@ -52,10 +52,19 @@ C:\Users\johannes\git-schulung>mkdir projekt1
 C:\Users\johannes\git-schulung>cd projekt1
 
 C:\Users\johannes\git-schulung\projekt1>git init
-Initialized empty Git repository in C:/Users/u004843/git-schulung/projekt1/.git/
+Initialized empty Git repository in C:/Users/Johannes/git-schulung/projekt1/.git/
 
 C:\Users\johannes\git-schulung\projekt1>code .
 
 C:\Users\johannes\git-schulung\projekt1>
 ```
 Jetzt sollte VSCode starten.
+
+# Aufräumen
+
+Weil das jetzt nur ein erster Test war, bitte VSCode wieder schließen und das Verzeichnis "projekt1" wieder löschen.
+
+```bash
+$ cd ..
+$ rm -r projekt1/
+```
