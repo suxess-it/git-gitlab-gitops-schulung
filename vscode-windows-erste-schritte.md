@@ -1,3 +1,28 @@
+# Erstes Git-Repo erstellen
+
+In der git-bash:
+
+```
+$ cd ~
+
+$ pwd
+/c/Users/johannes
+
+$ mkdir git-schulung
+
+$ cd git-schulung/
+
+$ mkdir projekt1
+
+$ cd projekt1/
+
+$ git init
+Initialized empty Git repository in C:/Users/johannes/git-schulung/projekt1/.git/
+
+$ code .
+```
+Jetzt sollte VSCode starten.
+
 Wir werden zu Beginn VSCode nur verwenden, um Dateien zu erstellen und zu schreiben. Die git-Befehle führen wir in der Command-Line aus, um git und seine Befehle besser kennenzulernen.
 
 Mit "code ." im Repository-Verzeichnis in der git-bash oder git-cmd VSCode starten.
@@ -43,7 +68,12 @@ $ git add dasisteinfile.txt
 $ git commit
 ```
 
-Jetzt startet sich ein Editor ("vi") wo man seine Commit-Message eingeben muss, dann mit ESC in den Command-Modus gehen muss, und dann mit ":x" den Editor beenden:
+Jetzt startet sich ein Editor ("vi") wo man 
+
+- mit "i" in den INSERT-Mode wechseln muss
+- seine Commit-Message eingeben muss
+- dann mit [ESC] in den Command-Modus gehen muss
+- und dann mit ":x" und [ENTER] den Editor beenden:
 
 ![image](https://github.com/suxess-it/git-gitlab-gitops-schulung/assets/11465610/29f76202-64f9-477d-b9cb-ebff5a16357c)
 
@@ -62,4 +92,4 @@ On branch main
 nothing to commit, working tree clean
 ```
 
-Bravo! Der erste Commit ist geschafft!
+Bravo! Der erste Commit ist geschafft! Lasst uns jetzt mal schauen was wir gemacht haben.
