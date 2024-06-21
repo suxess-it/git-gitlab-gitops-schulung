@@ -193,7 +193,7 @@ index 29c1016..af12d10 100644
 Die nächsten Befehle um das File bis in das Git-Repository zu bringen, darfst du jetzt selbst herausfinden.
 Füre nochmal `git diff` aus nachdem du die Änderung "gestaged" hast. Was fällt dir auf?
 
-Um Änderungen zwischen der Staging-Area und dem letzten Commit anzeigen zu lassen, führe den Befehl `$ git diff --staged` aus.
+Um Änderungen zwischen der Staging-Area und dem letzten Commit anzeigen zu lassen, führe den Befehl `git diff --staged` aus.
 
 # Bereits getrackte Files löschen
 
