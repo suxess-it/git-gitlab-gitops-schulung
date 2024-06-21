@@ -1,4 +1,4 @@
-# Dieses Repository beinhaltet Unterlagen zu einer git-Schulung der suXess
+# Unterlagen zu einer git-Schulung der suXess
 
 # Git Basics
 
