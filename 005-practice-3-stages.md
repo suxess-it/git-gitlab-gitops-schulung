@@ -195,6 +195,11 @@ Changes to be committed:
         deleted:    dasisteinfile.txt
 ```
 
+Alternative:
+Man kann das File aber auch zuerst im Working-Directory löschen (mit normalen `rm` Befehl) 
+und erst wenn man sich sicher ist, dass man das File wirklich löschen will, mit `git rm <file>` auch aus der Staging-Area löschen.
+
+
 Auch im Working-Directory und in der Staging-Area ist das File nicht mehr vorhanden:
 
 Working-Directory:
@@ -207,6 +212,13 @@ Staging-Area:
 ```bash
 $ git ls-files -s
 100644 d01e542adf015d6e7eaca9a08812a8f6b0ba7f24 0       neues-file.txt
+```
+
+Im Git-Repository allerdings schon:
+```bash
+$ git ls-tree -r 5f30ae453b691182
+100644 blob e69de29bb2d1d6434b8b29ae775ad8c2e48c5391    dasisteinfile.txt
+100644 blob d01e542adf015d6e7eaca9a08812a8f6b0ba7f24    neues-file.txt
 ```
 
 Jetzt kann die Änderung committiert werden, damit das File auch im Git-Repository verschwinden.
