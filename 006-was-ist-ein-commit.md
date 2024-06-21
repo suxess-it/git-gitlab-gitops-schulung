@@ -81,4 +81,45 @@ Wie erwartet wird ausgegeben, dass das file2.txt hinzugekommen ist und den neuen
 
 Das geht übrigens nicht nur zwischen zwei Commits die direkt hintereinander gemacht wurden, sondern auch zwischen dem 1. und 10. Commit!
 
+# Einen bestimmten Commit auschecken
 
+Man kann sich auch den Zustand eines bestimmten Commits nochmal in das Working-Directory holen - also auschecken.
+Der Befehl dazu lautet `git checkout <commit-id>`
+
+```bash
+$ git log --oneline
+90c4128 (HEAD -> main) ich möchte nochmal commits erklären
+21dd03d das file gefällt mir nicht mehr
+5f30ae4 nochmal
+d6b4c14 noch eine aenderung
+d0adc99 Jetzt aber ab ins Git-Repo mit dir!
+decece9 das ist mein erstes file
+
+$ git checkout decece9
+# jede Menge Warnhinweise werden jetzt angezeigt - aktuell können wir das noch ignorieren
+HEAD is now at decece9 das ist mein erstes file
+
+$ ls
+dasisteinfile.txt
+```
+
+Jetzt ist also im Working-Directory der Stand vom ersten Commit.
+
+Um wieder auf den aktuellen Stand zurückzukommen, gebt statt der Commit-ID den Referenznamen `main` ein:
+
+```bash
+$ git checkout main
+Switched to branch 'main'
+
+$ ls
+file2.txt  neues-file.txt
+```
+
+Zu Referenzen (Tags/Branches) kommen wir noch später, aber ihr könnt schon mal folgendes probieren:
+
+```bash
+$ cat .git/refs/heads/main
+90c41286e4687cb13d0c3e36584f958f90a638d4
+```
+
+Was fällt euch auf?
