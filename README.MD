@@ -1,5 +1,6 @@
-# Dieses Repository beinhaltet Dokumentation zu einer git-Schulung der suXess
+# Dieses Repository beinhaltet Unterlagen zu einer git-Schulung der suXess
 
+# Git Basics
 
 1. [Git installieren](https://github.com/suxess-it/git-gitlab-gitops-schulung/blob/main/001-install-git.md)
 2. [VSCode installieren und starten](https://github.com/suxess-it/git-gitlab-gitops-schulung/blob/main/002-install-vscode-windows.md)
@@ -11,3 +12,6 @@
 8. [Oh shit, git!?](https://github.com/suxess-it/git-gitlab-gitops-schulung/blob/main/008-oh-shit-git.md)
 9. [Branching](https://github.com/suxess-it/git-gitlab-gitops-schulung/blob/main/009-branches.md)
 
+# GitLab
+
+# GitOps
