@@ -176,8 +176,21 @@ Du kannst ganz einfach ein bestehendes File ändern indem du so in der Bash eine
 $ echo "das ist noch ein test" >> neues-file.txt
 ```
 
-Die nächsten Befehle um das File bis in das Git-Repository zu bringen, darfst du jetzt selbst herausfinden.
+Um den Unterschied zwischen dem Stand vom Working-Directory und dem Git-Repository zu sehen, kannst du `git diff` verwenden:
 
+```bash
+$ git diff
+warning: in the working copy of 'neues-file.txt', LF will be replaced by CRLF the next time Git touches it
+diff --git a/neues-file.txt b/neues-file.txt
+index 29c1016..af12d10 100644
+--- a/neues-file.txt
++++ b/neues-file.txt
+@@ -1 +1,2 @@
+ hallo ich bin da
++das ist noch ein test
+```
+
+Die nächsten Befehle um das File bis in das Git-Repository zu bringen, darfst du jetzt selbst herausfinden.
 
 # Bereits getrackte Files löschen
 
