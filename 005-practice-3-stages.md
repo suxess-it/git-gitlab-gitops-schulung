@@ -18,17 +18,20 @@ $ ls
 dasisteinfile.txt
 ```
 
+
 Staging-Area:
 ```bash
 $ git ls-files -s
 100644 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 0       dasisteinfile.txt
 ```
+Format: `<mode> <object> <stage> <file>`
 
 Git-Repository:
 ```bash
 $ git ls-tree -r main
 100644 blob e69de29bb2d1d6434b8b29ae775ad8c2e48c5391    dasisteinfile.txt
 ```
+Format: `<mode> <type> <object>	<name>`
 
 # Neues File in Working-Directory anlegen
 
