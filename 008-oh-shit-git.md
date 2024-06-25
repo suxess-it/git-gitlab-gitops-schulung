@@ -192,6 +192,14 @@ Achtung: das ganze wird kompliziert wenn man einen Commit reverted der Files anl
 Mit `git rebase <ref>~<n> -i` für interaktiv, kann ich mir die letzten <n> Commits anzeigen lassen und die Commits löschen oder auch umsortieren.
 Ziemlicher git-Kungfu - aber wer weiß was er tut, soll ruhig machen ...
 
+Zuerst Git-Log, um die Frage unten beantworten zu können:
+```bash
+$ git log
+```
+
+Und jetzt gehts mit dem Kungfu lost:
 ```bash
 $ git rebase main~5 -i
 ```
+
+Hat jemand eine Idee was mit den Commits nach dem gelöschten Commit passiert?
