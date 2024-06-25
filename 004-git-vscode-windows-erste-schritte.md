@@ -1,8 +1,19 @@
 # Erstes Git-Repo erstellen
 
-In der git-bash:
 
+Falls das Verzeichnis "projekt1" im git-schulung Ordner noch existiert, löschen wir es nochmal gleich, damit wir es nochmal anlegen können :)
+
+```bash
+$ cd ~
+$ pwd
+/c/Users/johannes
+$ cd git-schulung
+$ rm -r projekt1/
 ```
+
+Und wieder anlegen in der git-bash:
+
+```bash
 $ cd ~
 
 $ pwd
@@ -21,6 +32,7 @@ Initialized empty Git repository in C:/Users/johannes/git-schulung/projekt1/.git
 
 $ code .
 ```
+
 Jetzt sollte VSCode starten.
 
 Wir werden zu Beginn VSCode nur verwenden, um Dateien zu erstellen und zu schreiben. Die git-Befehle führen wir in der Command-Line aus, um git und seine Befehle besser kennenzulernen.
