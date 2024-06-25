@@ -44,11 +44,7 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 
-AzureAD+JohannesKleinlercher@HP860G9-JOHNNY MINGW64 ~/git-schulung/projekt1 (main)
-
 $ git add -A
-
-AzureAD+JohannesKleinlercher@HP860G9-JOHNNY MINGW64 ~/git-schulung/projekt1 (main)
 $ git status
 On branch main
 Changes to be committed:
