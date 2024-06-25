@@ -29,25 +29,37 @@ Date:   Thu Jun 20 16:54:47 2024 +0200
     das file gefällt mir nicht mehr
 ```
 
-Lasst uns jetzt den Inhalt der beiden Commits nochmal anzeigen:
+# Schematische Darstellung der beiden Commits im Git-Repository
+
+Im Git-Repository sind diese beiden Commits und ihre Daten dann so gespeichert (schematisch):
+
+![image](https://github.com/suxess-it/git-gitlab-gitops-schulung/assets/11465610/4dd7a864-8adf-4ead-82b9-a25c99b42162)
+
+# Was ist der Inhalt des Commits
+
+Lasst uns jetzt den Inhalt der beiden Commits nochmal durchforsten.<br>
+Dazu brauchen wir nur einen Command, nämlich `git cat-file -p`
 
 Commit 21dd03:
+
 ```bash
-$ git ls-tree -r 21dd03
-100644 blob d01e542adf015d6e7eaca9a08812a8f6b0ba7f24    neues-file.txt
+$ git cat-file -p 21dd03
+tree bb1f5f12fc3e728e05c6f151615d7adef8f9c19b                                             # root tree des Root-Verzeichnisses des git-Projekts
+parent 5f30ae453b691182449371eb95fd7c2304f60f12                                           # Parent Commit dieses Commits.
+author Johannes Kleinlercher <johannes.kleinlercher@suxess-it.com> 1718895287 +0200       # Author
+committer Johannes Kleinlercher <johannes.kleinlercher@suxess-it.com> 1718895287 +0200    # Committer
+
+das file gefällt mir nicht mehr                                                           # Commit-Message
 ```
 
-Commit 90c412:
+Und dann kann man sich auch die Files/Directorys in diesem Commit anschauen, indem man den SHA1-Hash des tree Objekts angibt:
 ```bash
-$ git ls-tree -r 90c412
-100644 blob 634bb07288a6406463ebbc3f75d1423eac1958e9    file2.txt
+$ git cat-file -p bb1f5f
 100644 blob d01e542adf015d6e7eaca9a08812a8f6b0ba7f24    neues-file.txt
 ```
 Format: `<mode> <type> <object>	<name>`
 
-Ihr seht dass der Blob für die Datei `neues-file.txt` in beiden Commits die gleiche ID hat.
-
-Man kann sich übrigens mit diesem Befehl auch den Inhalt des Blobs (also den Dateiinhalt) anzeigen lassen:
+Und dann kann man sich noch den Inhalt des Files anschauen:
 
 ```bash
 $ git cat-file -p d01e54
@@ -55,12 +67,36 @@ hallo ich bin da
 das ist noch ein test
 ```
 
-# Schematische Darstellung der beiden Commits im Git-Repository
+Das ganze jetzt mit dem nächsten Commit.
 
-Im Git-Repository sind diese beiden Commits und ihre Daten dann so gespeichert (schematisch):
+Commit 90c412:
+```bash
+$ git cat-file -p 90c412
+tree 0cb430b69b864e989da70cca98ea19054c46d76f
+parent 21dd03dc2d43468a27d42dc9cf97a2f2ba189078
+author Johannes Kleinlercher <johannes.kleinlercher@suxess-it.com> 1718960997 +0200
+committer Johannes Kleinlercher <johannes.kleinlercher@suxess-it.com> 1718960997 +0200
 
-![image](https://github.com/suxess-it/git-gitlab-gitops-schulung/assets/11465610/4dd7a864-8adf-4ead-82b9-a25c99b42162)
+ich möchte nochmal commits erklären
+```
 
+Und wieder den Inhalt des tree-Objekts (also alle Files und Directories die sich im Basisverzeichnis des git-Projektes befinden):
+
+```bash
+$ git cat-file -p 0cb430
+100644 blob 634bb07288a6406463ebbc3f75d1423eac1958e9    file2.txt
+100644 blob d01e542adf015d6e7eaca9a08812a8f6b0ba7f24    neues-file.txt
+```
+Format: `<mode> <type> <object>	<name>`
+
+Was fällt auf? Ihr seht dass der Blob für die Datei `neues-file.txt` in beiden Commits die gleiche ID hat.<br>
+Warum? Weil sich dieses File nicht geändert hat. Es wird deshalb nicht nochmal gespeichert.
+
+Mit `git ls-tree` kann man sich auch direkt die Files des Commits anzeigen lassen:
+```bash
+$ git ls-tree 21dd03
+100644 blob d01e542adf015d6e7eaca9a08812a8f6b0ba7f24    neues-file.txt
+```
 
 # Unterschied zwischen den beiden Commits anzeigen lassen
 
