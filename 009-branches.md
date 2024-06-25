@@ -78,7 +78,7 @@ $ git log --all --oneline --graph
 Wenn ein main-Branch und ein Feature/Fix-Branch parallel weiterentwickelt werden,
 gibt es zwei Gründe Änderungen von einem in den anderen Branch zu übernehmen.
 
-**Neue Commits vom main-Branch in den Feature-Branch übernehmen**
+## Neue Commits vom main-Branch in den Feature-Branch übernehmen
 
 Das ist dann wichtig, wenn sich der main-Branch weiterentwickelt hat,
 und man will im Feature-Branch wissen ob der aktuellste Code vom main-Branch
@@ -86,7 +86,7 @@ auch mit den Neuentwicklungen vom Feature-Branch funktioniert.
 
 Das will man im Feature-Branch testen, bevor man das Feature im main-Branch public macht.
 
-## Rebase
+### Rebase
 
 Mit `git rebase` werden die Commits vom Feature-Branch auf den letzten Commit des main-Branch gelegt.
 Damit ändern sich die Commits des Feature-Branches natürlich, weil ihr Inhalt ein anderer ist. Das macht git automatisch.<br>
@@ -133,7 +133,7 @@ main: weiterentwicklung
 main: weiterentwicklung teil 2
 ```
 
-## Merge
+### Merge
 
 Statt einem Rebase kann auch ein Merge-Commit gemacht werden.
 
@@ -154,7 +154,7 @@ $ git log --all --oneline --graph
 * 10128d1 ich möchte nochmal commits erklären
 ```
 
-Der offensichtliche Unterschied ist, dass die Commits im Feature-Branch nicht verschoben oder verändert werden.<br>
+Der offensichtliche Unterschied ist, dass die Commits im Feature-Branch bei einem Merge nicht verschoben oder verändert werden. Bei einem Rebase aber schon!<br>
 Außerdem wurde ein zusätzlicher Commit erzeugt um die Änderungen vom main-Branch in den Feature-Branch zu bringen.
 
 ![image](https://github.com/suxess-it/git-gitlab-gitops-schulung/assets/11465610/a70338af-1e83-4d68-8441-32ae1f5e578f)
@@ -179,7 +179,7 @@ hallo ich bin da
 
 Wie könnte man mit `git diff` diese Unterschiede anzeigen lassen? Hat jemand eine Idee?
 
-**Änderungen vom Feature-Branch in den main-Branch bringen**
+## Änderungen vom Feature-Branch in den main-Branch bringen
 
 Um jetzt den Feature-Branch in den main-Branch zu mergen, kann man folgendes aufrufen:
 
