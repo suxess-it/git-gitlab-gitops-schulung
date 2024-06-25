@@ -89,7 +89,7 @@ Das will man im Feature-Branch testen, bevor man das Feature im main-Branch publ
 ## Rebase
 
 Mit `git rebase` werden die Commits vom Feature-Branch auf den letzten Commit des main-Branch gelegt.
-Damit ändern sich die Commits des Feature-Branches natürlich. Das macht git automatisch.
+Damit ändern sich die Commits des Feature-Branches natürlich, weil ihr Inhalt ein anderer ist. Das macht git automatisch.<br>
 
 Vor dem Rebase:
 
@@ -98,6 +98,10 @@ Vor dem Rebase:
 Nach dem Rebase:
 
 ![image](https://github.com/suxess-it/git-gitlab-gitops-schulung/assets/11465610/1fc2d0f9-6a56-4031-adb8-7f160c7852a8)
+
+Hintergrund: Eigentlich macht Git für jeden Commit den er "verschieben" muss ein `git cherry-pick`.
+Git schaut sich den Unterschied zwischen den Commits in der "alten" Commit-Reihe an,
+und packt diese Änderungen in neuen Commits auf die neue Commit-Reihe.
 
 Der Command um einen Rebase des Feature-Branches auf den Master-Branch zu machen:
 
