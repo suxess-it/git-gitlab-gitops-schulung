@@ -68,7 +68,6 @@ kann man auch den Zwischenschritt mit der Staging-Area implizit durchführen.
 ```bash
 $ echo "noch eine änderung" >> neues-file.txt
 $ git status
-$ git status
 On branch main
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
