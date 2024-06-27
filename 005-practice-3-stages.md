@@ -235,7 +235,7 @@ $ git ls-files -s
 
 Im Git-Repository allerdings schon:
 ```bash
-$ git ls-tree -r 5f30ae453b691182
+$ git ls-tree -r main
 100644 blob e69de29bb2d1d6434b8b29ae775ad8c2e48c5391    dasisteinfile.txt
 100644 blob d01e542adf015d6e7eaca9a08812a8f6b0ba7f24    neues-file.txt
 ```
