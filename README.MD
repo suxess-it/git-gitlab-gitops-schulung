@@ -1,5 +1,7 @@
 # Unterlagen zu einer git-Schulung der suXess
 
+Mentimeter-Umfrage: https://www.menti.com/almjzg2due93
+
 # Git Basics
 
 1. [Git installieren](https://github.com/suxess-it/git-gitlab-gitops-schulung/blob/main/001-install-git.md)
