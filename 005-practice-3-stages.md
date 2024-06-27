@@ -195,6 +195,11 @@ Füre nochmal `git diff` aus nachdem du die Änderung "gestaged" hast. Was fäll
 
 Um Änderungen zwischen der Staging-Area und dem letzten Commit anzeigen zu lassen, führe den Befehl `git diff --staged` aus.
 
+```bash
+$ git add neues-file.txt
+$ git commit -m "aenderungen wegen wunsch von klaus"
+```
+
 # Bereits getrackte Files löschen
 
 Um Files im Git-Repository zu löschen, kann man mit folgendem Befehl das File gleichzeitig aus dem Working-Directory und der Staging-Area löschen:
