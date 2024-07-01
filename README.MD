@@ -1,8 +1,10 @@
-# Unterlagen zu einer git-Schulung der suXess
+# Unterlagen zur git / gitlab / gitops-Schulung der suXess
 
-Mentimeter-Umfrage: https://www.menti.com/almjzg2due93
+Zusätzlich zu diesen Arbeitsunterlagen gibts noch eine PowerPoint-Präsentation, die auch bald hier erscheinen wird.
 
 # Git Basics
+
+Mentimeter-Umfrage: https://www.menti.com/almjzg2due93
 
 1. [Git installieren](https://github.com/suxess-it/git-gitlab-gitops-schulung/blob/main/001-install-git.md)
 2. [VSCode installieren und starten](https://github.com/suxess-it/git-gitlab-gitops-schulung/blob/main/002-install-vscode-windows.md)
