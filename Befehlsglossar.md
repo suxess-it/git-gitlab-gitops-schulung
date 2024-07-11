@@ -29,7 +29,7 @@ In folgender Tabelle werden nochmal die wichtigsten Befehle erklärt, die in die
 | `git restore <datei>` | setzt die Datei im Working-Directory wieder auf den Zustand in der Staging-Area zurück |
 | `git restore --source=<commit> <datei>` | setzt die Datei im Working-Directory wieder auf den Zustand von Commit `<commit>` zurück |
 | `git commit -a --amend --no-edit` | ersetzt den letzten Commit mit diesem neuen Commit und belässt die ursprüngliche Commit-Message |
-| `git commit --amend -m "<message>" | ersetzt die Commit-Message des letzten Commits mit der neuen Message |
+| `git commit --amend -m "<message>"` | ersetzt die Commit-Message des letzten Commits mit der neuen Message |
 | `git reset main~` | den letzten Commit aus dem git-Repository entfernen, die Änderungen aber im Working-Directory belassen |
 | `git reset main~ --hard` | den letzten Commit im git-Repository und diese Änderungen auch im Working-Directory entfernen |
 | `git revert <commit> --no-edit` | den Commit `<commit>` durch einen neuen Commit rückgängig machen, die Commit-Message soll `revert <old commit message>` lauten |
