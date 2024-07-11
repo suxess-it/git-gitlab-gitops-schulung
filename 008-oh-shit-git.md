@@ -174,7 +174,7 @@ Wenn man die Änderungen durch den letzten Commit sowohl im Git-Repository als a
 muss man die Option `--hard` ergänzen.
 
 ```bash
-$ git reset main~4 --hard
+$ git reset main~ --hard
 HEAD is now at 90c4128 ich möchte nochmal commits erklären
 ```
 
