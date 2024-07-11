@@ -173,7 +173,7 @@ Jetzt bringen wir diese zwei Commits vom main-Branch über einen merge-Commit in
 
 ```bash
 $ git switch feat/mfa
-$ git merge main
+$ git merge main --no-edit
 Merge made by the 'ort' strategy.
  dasisteinfile.txt | 2 ++
  1 file changed, 2 insertions(+)
