@@ -34,5 +34,9 @@ In folgender Tabelle werden nochmal die wichtigsten Befehle erklärt, die in die
 | `git reset main~ --hard` | den letzten Commit im git-Repository und diese Änderungen auch im Working-Directory entfernen |
 | `git revert <commit> --no-edit` | den Commit `<commit>` durch einen neuen Commit rückgängig machen, die Commit-Message soll `revert <old commit message>` lauten |
 | `git rebase main~5 -i` | die letzten 5 Commits interaktiv verändern (löschen, umsortieren, Commit-Message ändern, ...) |
-
-todo: all commands from https://github.com/suxess-it/git-gitlab-gitops-schulung/blob/main/009-branches.md
+| `git checkout -b <branch>` | erstelle einen neuen Branch mit dem Namen `<branch>` und wechsle gleich auf den neuen Branch |
+| `git branch <branch>` | erstelle einen neuen Branch mit dem Namen `<branch>` - bleibe aber in dem aktuellen Branch|
+| `git switch <branch>` | wechsle in den Branch mit dem Namen `<branch>`|
+| `git branch -d <branch>` | lösche den Branch mit dem Namen `<branch>`|
+| `git rebase <branch1> <branch2>` | setze alle Commits vom Branch `<branch2>` auf den Branch `<branch1>` |
+| `git merge <branch> --no-edit` | Merge die Änderungen vom Branch `<branch>` in deinen aktuell ausgecheckten Branch und verwenden die Default-Commit-Message für einen Merge-Commit |
