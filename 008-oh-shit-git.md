@@ -45,7 +45,7 @@ On branch main
 nothing to commit, working tree clean
 ```
 
-Damit ist der Stand des Files wieder vom aktuellen Commit.
+Damit ist der Stand des Files wieder der von der Staging-Area (entspricht auch dem Stand vom letzten Commit).
 
 ## Ein File im Working-Directory auf den Stand von einem früheren Commit bringen
 
