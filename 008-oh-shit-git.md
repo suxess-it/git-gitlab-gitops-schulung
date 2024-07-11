@@ -21,6 +21,12 @@ Untracked files:
         vielleicht
 ```
 
+Damit uns das File in den nächsten Schritten nicht stört, löschen wir es jetzt:
+
+```bash
+$ rm vielleicht
+```
+
 ## Ich hab Änderungen in einem File im Working-Directory gemacht, die will ich rückgängig machen
 
 Der Befehl `git status` zeigt gottseidank schon den Befehl an, den man dafür benötigt:
