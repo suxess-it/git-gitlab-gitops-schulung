@@ -24,6 +24,20 @@ nothing added to commit but untracked files present (use "git add" to track)
 Hier sieht man, dass zwar das .gitignore File selbst als neues File erkannt wird,
 das bla.tar.gz wird aber bereits ignoriert.
 
+Committiert das .gitignore jetzt in das Repository
+
+```bash
+$ git add .gitignore 
+
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+
+$ git commit -m "add gitignore to ignore stupid files"
+```
+
 Man kann unterschiedlichste Pattern angeben, am besten im [offiziellen Handbuch](https://git-scm.com/docs/gitignore) nachlesen.
 
 # Mehrere Files gleichzeitig der Staging-Area hinzufügen
