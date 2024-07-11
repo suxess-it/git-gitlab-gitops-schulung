@@ -27,9 +27,21 @@ In der git-bash sieht man den Branch, in dem man gerade arbeitet, auch in der Be
 
 # Branch löschen
 
+Ein Branch kann mit `git branch -d <branch-name>` wieder gelöscht werden. Aber Achtung, nicht den Zweig abschneiden,
+auf dem man sitzt ;)
+
 ```bash
 $ git branch -d feat/mfa
-Deleted branch feat/mfa (was ae3e653).
+error: cannot delete branch 'feat/mfa' used by worktree at 'C:/Users/johannes.kleinlercher@suxess-it.com/git-schulung/projekt1'
+```
+
+besser:
+
+```bash
+$ git switch main
+Switched to branch 'main'
+$ git branch -d feat/mfa
+Deleted branch feat/mfa (was 02f7cd7).
 ```
 
 # Commits im Branch erstellen
