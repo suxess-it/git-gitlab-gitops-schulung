@@ -58,12 +58,15 @@ $ git restore --source=4fd6d3456 neues-file.txt
 Das File ist somit verändert worden und muss wieder neu committed werden:
 
 ```bash
- git status
+$ git status
 On branch main
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git restore <file>..." to discard changes in working directory)
         modified:   file3
+
+$ git commit -a -m "neuer Commit mit dem Stand eines Files von einem alten Commit"
+$ git status
 ```
 
 
