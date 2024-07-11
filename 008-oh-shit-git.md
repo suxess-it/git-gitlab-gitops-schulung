@@ -196,7 +196,12 @@ indem einfach in einem neuen Commit die "Rückgängig-Änderungen" durchgeführt
 $ git revert 0e3d42a2 --no-edit
 ```
 
-Wichtig: hier wird kein alter Commit gelöscht, sondern ein neuer Commit erstellt, der die Änderungen rückgängig macht. Die Korrektur ist also in der Commit-History nachvollziehbar.
+Wichtig: hier wird kein alter Commit gelöscht, sondern ein neuer Commit erstellt, der die Änderungen rückgängig macht. Die Korrektur ist also in der Commit-History nachvollziehbar:
+
+```bash
+$ git log
+```
+
 Achtung: das ganze wird kompliziert wenn man einen Commit reverted der Files anlegt, die in einem späteren Commit geändert werden. (Wenn wir Zeit haben können wir das in einem neuen Git-Repo kurz ausprobieren).
 
 ## Einen früheren Commit rückgängig machen, aber in der Commit-Historie verschwinden lassen
