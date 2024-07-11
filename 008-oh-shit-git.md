@@ -163,6 +163,11 @@ Wenn man 3 Commits zurückgehen will, dann kann man folgendes aufrufen:
 $ git reset main~3
 ```
 
+Wenn man die Änderungen im Working-Directory wieder committen will:
+```bash
+$ git commit -a -m "wieder committen"
+```
+
 ## Den letzten Commit rückgängig machen und die Änderungen auch im Working-Directory entfernen
 
 Wenn man die Änderungen durch den letzten Commit sowohl im Git-Repository als auch im Working-Directory rückgängig machen will,
