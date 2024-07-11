@@ -264,7 +264,7 @@ weil die alle andere Commits in ihrem lokalen Repository haben!
 
 ![image](https://github.com/suxess-it/git-gitlab-gitops-schulung/assets/11465610/1fd84530-e607-40b3-a524-227a5bf5f91d)
 
-# Rebase rückgängig machen (hauptsächlich für mich um Merge statt Rebase zu zeigen)
+# Rebase rückgängig machen (nur Anmerkung für mich)
 
 ```bash
 $ git reflog
