@@ -47,6 +47,7 @@ Deleted branch feat/mfa (was 02f7cd7).
 # Commits im Branch erstellen
 
 ```bash
+$ git checkout -b feat/mfa
 $ echo "feature: 123" >> neues-file.txt
 
 $ git commit -a -m "feat: erster versuch des neuen features"
