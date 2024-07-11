@@ -89,7 +89,7 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-Bevor man jetzt `git add neues-file.txt` ausführt und dann `commit -a -m <message>` geht das in einem:
+Bevor man jetzt `git add neues-file.txt` ausführt und dann `git commit -m <message>` geht das in einem mit `git commit -a -m <message>`:
 
 ```bash
 $ git commit -a -m "the stage is yours"
