@@ -172,12 +172,14 @@ Merge made by the 'ort' strategy.
  1 file changed, 2 insertions(+)
 
 $ git log --all --oneline --graph
-*   5a68398 (HEAD -> feat/mfa) Merge branch 'main' into feat/mfa
+*   932e922 (HEAD -> feat/mfa) Merge branch 'main' into feat/mfa
 |\
-| * 3f8fb95 (main) noch eine weiterentwicklung im main-Branch
-| * e2d83b4 kleine weiterentwicklung im main-Branch
-* | a20f10d feat: erster versuch des neuen features
+| * 901eef7 (main) schon wieder aenderungen im main-Branch
+| * 2958d1d wieder aenderungen im main-Branch
+* | 2bf8a3f feat: erster versuch des neuen features
 |/
+* dbaa640 noch eine weiterentwicklung im main-Branch
+* 512c2b9 kleine weiterentwicklung im main-Branch
 * ae3e653 Revert "das file gefällt mir nicht mehr"
 * 10128d1 ich möchte nochmal commits erklären
 ```
