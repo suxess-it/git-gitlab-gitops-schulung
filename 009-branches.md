@@ -226,7 +226,7 @@ Um jetzt den Feature-Branch in den main-Branch zu mergen, kann man folgendes auf
 $ git switch main
 Switched to branch 'main'
 
-$ git merge feat/mfa
+$ git merge feat/mfa --no-edit
 Updating 3f8fb95..5a68398
 Fast-forward
  neues-file.txt | 1 +
