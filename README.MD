@@ -15,6 +15,7 @@ Mentimeter-Umfrage: https://www.menti.com/almjzg2due93
 7. [Git-Ignore, Add all, Multiline-Message](https://github.com/suxess-it/git-gitlab-gitops-schulung/blob/main/007-gitignore-git-add-commit-all.md)
 8. [Oh shit, git!?](https://github.com/suxess-it/git-gitlab-gitops-schulung/blob/main/008-oh-shit-git.md)
 9. [Branching](https://github.com/suxess-it/git-gitlab-gitops-schulung/blob/main/009-branches.md)
+10. [Alle Befehle vom ersten Teil](https://github.com/suxess-it/git-gitlab-gitops-schulung/blob/main/Befehlsglossar.md)
 
 # GitLab
 
