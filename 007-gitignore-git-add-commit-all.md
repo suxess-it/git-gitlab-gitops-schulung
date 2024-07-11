@@ -35,7 +35,7 @@ Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
         new file:   .gitignore
 
-$ git commit -m "add gitignore to ignore stupid files"
+$ git commit -m "wir wollen bestimmte files ignorieren"
 ```
 
 Man kann unterschiedlichste Pattern angeben, am besten im [offiziellen Handbuch](https://git-scm.com/docs/gitignore) nachlesen.
@@ -66,6 +66,8 @@ Changes to be committed:
         new file:   bla/test
         new file:   blub
         new file:   ok
+
+$ git commit -m "viele files - alle wichtig"
 ```
 
 Man kann aber auch mehrere Files hintereinander angeben oder mit "*" arbeiten, z.B. `git add test1.txt test2.txt` oder `git add *.txt` .
