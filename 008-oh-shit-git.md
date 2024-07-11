@@ -146,9 +146,7 @@ commit 7cb263b91b6b0a1285f34bb8fd2088b4cc812cc9 (HEAD -> main)
 Author: Johannes Kleinlercher <johannes.kleinlercher@suxess-it.com>
 Date:   Fri Jun 21 16:37:55 2024 +0200
 
-    JIRA-345: Zwei-Faktor-Auth implementiert
-
-    Wegen Compliance-Richtlinien wurde die Software um Zwei-Faktor-Auth erweitert.
+    neuer Commit mit dem Stand eines Files von einem alten Commit
 ```
 
 Man sieht im Git-Log ist der letzte Commit verschwunden, aber lt. `git status` sind die Änderungen noch im Working-Directory.
