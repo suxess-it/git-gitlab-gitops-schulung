@@ -150,8 +150,23 @@ main: weiterentwicklung teil 2
 
 Statt einem Rebase kann auch ein Merge-Commit gemacht werden.
 
+Dazu wieder ein paar Commits im main-Branch erstellen:
+
 ```bash
-$ git merge main feat/mfa
+$ git checkout main
+$ echo "main: weiterentwicklung teil 3" >> dasisteinfile.txt
+$ git commit -a -m "wieder aenderungen im main-Branch"
+$ echo "main: weiterentwicklung teil 4" >> dasisteinfile.txt
+$ git commit -a -m "schon wieder aenderungen im main-Branch"
+$ git log --all --oneline --graph
+```
+
+Jetzt ist der main-Branch wieder zwei Commits weiter als der Feature-Branch.<br>
+Jetzt bringen wir diese zwei Commits vom main-Branch über einen merge-Commit in den Feature-Branch:
+
+```bash
+$ git switch feat/mfa
+$ git merge main
 Merge made by the 'ort' strategy.
  dasisteinfile.txt | 2 ++
  1 file changed, 2 insertions(+)
@@ -178,6 +193,8 @@ Aber wichtig: es sind immer noch erst die Änderungen vom main-Branch im Feature
 $ cat dasisteinfile.txt
 main: weiterentwicklung
 main: weiterentwicklung teil 2
+main: weiterentwicklung teil 3
+main: weiterentwicklung teil 4
 ```
 
 Aber im main-Branch sind noch keine Änderungen vom Feature-Branch:
