@@ -72,6 +72,7 @@ $ git checkout main
 Switched to branch 'main'
 
 $ echo "main: weiterentwicklung" >> dasisteinfile.txt
+$ git add dasisteinfile.txt
 $ git commit -a -m "kleine weiterentwicklung im main-Branch"
 
 $ echo "main: weiterentwicklung teil 2" >> dasisteinfile.txt
@@ -85,6 +86,12 @@ $ git log --all --oneline --graph
 * ae3e653 Revert "das file gefällt mir nicht mehr"
 * 10128d1 ich möchte nochmal commits erklären
 ```
+
+Etwas schöner sieht man es im VS Code mit der [Git-Graph Extension](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph):
+
+![image](https://github.com/user-attachments/assets/8c29481b-f893-4f34-bae7-41eb69fd485b)
+
+
 
 # Änderungen von zwei Branches zusammenführen
 
