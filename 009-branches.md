@@ -216,7 +216,10 @@ Wie könnte man mit `git diff` diese Unterschiede anzeigen lassen? Hat jemand ei
 Um jetzt den Feature-Branch in den main-Branch zu mergen, kann man folgendes aufrufen:
 
 ```bash
-$ git merge feat/mfa main
+$ git switch main
+Switched to branch 'main'
+
+$ git merge feat/mfa
 Updating 3f8fb95..5a68398
 Fast-forward
  neues-file.txt | 1 +
@@ -228,12 +231,14 @@ weil der main-Branch-Zeiger nur auf den nächsten Commit verschoben werden muss 
 
 ```bash
 $ git log --all --oneline --graph
-*   5a68398 (HEAD -> main, feat/mfa) Merge branch 'main' into feat/mfa
+*   932e922 (HEAD -> main, feat/mfa) Merge branch 'main' into feat/mfa
 |\
-| * 3f8fb95 noch eine weiterentwicklung im main-Branch
-| * e2d83b4 kleine weiterentwicklung im main-Branch
-* | a20f10d feat: erster versuch des neuen features
+| * 901eef7 schon wieder aenderungen im main-Branch
+| * 2958d1d wieder aenderungen im main-Branch
+* | 2bf8a3f feat: erster versuch des neuen features
 |/
+* dbaa640 noch eine weiterentwicklung im main-Branch
+* 512c2b9 kleine weiterentwicklung im main-Branch
 * ae3e653 Revert "das file gefällt mir nicht mehr"
 * 10128d1 ich möchte nochmal commits erklären
 ```
