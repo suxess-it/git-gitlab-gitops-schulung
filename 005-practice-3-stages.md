@@ -151,7 +151,6 @@ Jetzt gibt es zwei Commits im Git-Repository. So werden sie chronologisch (neues
 
 ```bash
 $ git log
-$ git log
 commit d0adc9941b14d0c9b8f6b5f5fbdc25b57850d26b (HEAD -> main)
 Author: Johannes Kleinlercher <johannes.kleinlercher@suxess-it.com>
 Date:   Thu Jun 20 15:55:54 2024 +0200
