@@ -20,3 +20,9 @@ Mentimeter-Umfrage: https://www.menti.com/almjzg2due93
 # GitLab
 
 # GitOps
+
+# Lern-Tools
+
+- https://www.w3schools.com/git/exercise.asp
+- https://git-school.github.io/visualizing-git/
+- https://learngitbranching.js.org/?locale=de_DE
