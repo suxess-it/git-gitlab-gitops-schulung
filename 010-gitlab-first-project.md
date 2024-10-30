@@ -83,7 +83,8 @@ TODO:
 
 TODO:
 
-- Wo sieht man die gepushten Commits
+- Wo sieht man die gepushten Commits (Source Control View, Source Control Graph links unten)
+- GitLab Plugins? (checken welche defaultmäßig installiert sind, und welche man braucht)
 - Feature-Branches
 - Erstellen von Merge-Requests
 
