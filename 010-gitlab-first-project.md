@@ -1,7 +1,6 @@
 # Das erste GitLab-Projekt anlegen
 
-
-
+TODO
 
 # Lokales git-Projekt mit dem Remote-GitLab-Projekt verbinden
 
@@ -66,3 +65,31 @@ Date:   Thu Jul 25 11:06:38 2024 +0200
 
 $ git push -uf origin main
 ```
+
+# Git-Projekt im VSCode weiter bearbeiten
+
+TODO:
+
+- VSCode starten
+- im VSCode zurecht finden
+- Neues File im VSCode erstellen
+- Wie macht man im VSCCode "git diff", "git add" "git commit", "git restore --staged", "git checkout"
+- Welche neuen Commands kommen mit einem Remote-Repository dazu?
+    - git push
+    - git clone
+    - git fetch
+
+# Git-Projekt im GitLab bearbeiten
+
+TODO:
+
+- Wo sieht man die gepushten Commits
+- Feature-Branches
+- Erstellen von Merge-Requests
+
+# Wichtige Git-Projekt Einstellungen im GitLab
+
+TODO:
+
+- protected branches
+- Merge Request Einstellungen
