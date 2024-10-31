@@ -2,11 +2,15 @@
 
 siehe interne Confluence-Seite
 
+`git clone`: Klont ein Remote-Repository in ein lokales Verzeichnis
+
+
 # Lokales git-Projekt mit dem Remote-GitLab-Projekt verbinden
 
-Wir erstellen ein neues lokales Verzeichnis und versuchen wie in der README.md unseres GitLab-Projektes die ersten Schritte durchzuführen.
+Anstatt das Remote-Repository zu klonen, können wir auch lokal ein Git-Reposiotry initialisieren und mit dem Remote-Repository verbinden.
 
-Projektverzeichnis anlegen:
+Dazu löschen wir jetzt wieder das davor durch `git clone` erstellte Verzeichnis und legen selbst ein neues git-Repository an.
+ACHTUNG: Befehle unten genau so befolgen, nicht dass ihr versehentlich ein anderes Verzeichnis mit `rm -rf` löscht!
 ```
 $ cd ~
 
@@ -15,12 +19,15 @@ $ pwd
 
 $ cd git-schulung
 
+$ rm -rf first-gitlab-project
 $ mkdir first-gitlab-project
 
 $ cd first-gitlab-project
+
+$ ls
 ```
 
-Remote-Repository als `origin` vom lokalen Repository angeben:
+Remote-Repository als `origin` vom lokalen Repository angeben (u004843 entsprechend anpassen):
 ```
 $ git remote add origin https://gitlab.aws.sopra.cloud/u004843/first-gitlab-project.git
 fatal: not a git repository (or any of the parent directories): .git
@@ -32,27 +39,36 @@ Git-Repository initialisieren, dann kann man das Remote-Repository als `origin` 
 ```
 $ git init
 Initialized empty Git repository in C:/Users/u004843/git-schulung/first-gitlab-project/.git/
+```
 
+Jetzt nochmal Remote-Repository als `origin` vom lokalen Repository angeben (u004843 entsprechend anpassen):
+```
 $ git remote add origin https://gitlab.aws.sopra.cloud/u004843/first-gitlab-project.git
+```
+Jedes Remote-Repository hat einen sogenannten Alias, in diesem Fall `origin`. Man könnte ihn aber genauso `Hubert` nennen.
+Außerdem kann man auch mehrere Remote-Repositories angeben.
 
+Mit welchen Remote-Repositories das git-Repo verknüpft ist, sieht man mit `git remote -v`:
+```
 $ git remote -v
 origin  https://gitlab.aws.sopra.cloud/u004843/first-gitlab-project.git (fetch)
 origin  https://gitlab.aws.sopra.cloud/u004843/first-gitlab-project.git (push)
-git branch -M main
+```
 
-$ git push -uf origin main
+Mit `git push` kann man den aktuellen Stand vom lokalen git-Repo auf das Remote-Repository schieben:
+```
+$ git push --set-upstream origin main
 error: src refspec main does not match any
 error: failed to push some refs to 'https://gitlab.aws.sopra.cloud/u004843/first-gitlab-project.git'
 ```
 
-Was fehlt jetzt noch? 
+Was fehlt jetzt noch?
 
 Ohne Commits im lokalen Repository kann man nichts pushen. 
-
 ```
 $ touch README.md
 
-$ git add -A
+$ git add README.md
 
 $ git commit -m "initial commit"
 
@@ -62,9 +78,39 @@ Author: Johannes Kleinlercher <johannes.kleinlercher@suxess-it.com>
 Date:   Thu Jul 25 11:06:38 2024 +0200
 
     initial commit
-
-$ git push -uf origin main
 ```
+
+Jetzt können wir `git push` nochmal ausprobieren:
+
+```
+$ git push --set-upstream origin main
+```
+
+Funktioniert leider wieder nicht. Warum? Weil sich im Remote-Repository bereits Commits befinden die man so überschreiben würde.
+
+Lösung: wenn man, wie wir jetzt in diesem Fall, die Commits im Remote-Repository wirklich überschreiben will,
+muss man den Parameter `--force` oder kurz `-f` ergänzen:
+
+```
+$ git push --set-upstream -f origin main
+```
+
+Leider geht das aber wieder nicht :(
+
+```
+git push --set-upstream -f origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 232 bytes | 232.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: GitLab: You are not allowed to force push code to a protected branch on this project.
+To https://gitlab.aws.sopra.cloud/u004843/first-gitlab-project.git
+ ! [remote rejected] main -> main (pre-receive hook declined)
+error: failed to push some refs to 'https://gitlab.aws.sopra.cloud/u004843/first-gitlab-project.git'
+```
+
+Standardmäßig ist in Eurem Gitlab der main-Branch protected, d.h. man darf auf den main-Branch nichts direkt pushen.
+
 
 # Git-Projekt im VSCode weiter bearbeiten
 
