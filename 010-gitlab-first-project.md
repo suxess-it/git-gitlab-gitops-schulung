@@ -77,6 +77,8 @@ In Source-Control View:
 
 Commitet und synct jetzt nochmal die Änderungen und schaut euch die Source-Control View an.
 
+oh shit, git! Szenarien in VSCode?
+
 # Git-Projekt im GitLab bearbeiten
 
 TODO:
