@@ -40,3 +40,4 @@ In folgender Tabelle werden nochmal die wichtigsten Befehle erklärt, die in die
 | `git branch -d <branch>` | lösche den Branch mit dem Namen `<branch>`|
 | `git rebase <branch1> <branch2>` | setze alle Commits vom Branch `<branch2>` auf den Branch `<branch1>` |
 | `git merge <branch> --no-edit` | Merge die Änderungen vom Branch `<branch>` in deinen aktuell ausgecheckten Branch und verwenden die Default-Commit-Message für einen Merge-Commit |
+| `git clone <Remote-Git-Repo-URL> | Klont ein Remote-Repository in ein lokales Verzeichnis |
