@@ -1,6 +1,6 @@
 # Das erste GitLab-Projekt anlegen
 
-TODO
+siehe interne Confluence-Seite
 
 # Lokales git-Projekt mit dem Remote-GitLab-Projekt verbinden
 
