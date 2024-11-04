@@ -2,9 +2,9 @@
 
 Es gibt verschiedene Möglichkeiten wie man VCode starten und ein Git-Repo darin öffnen kann.
 
-## Über die Command-Line im bereits geklonten git-Repository
+## Über die git-Bash im bereits geklonten git-Repository
 
-Über die Command-Line (git bash) in das entsprechende git-Verzeichnis wechseln und dort VSCode starten:
+In der git-Bash in das entsprechende git-Verzeichnis wechseln und dort VSCode starten:
 
 ```
 $ cd ~
@@ -29,15 +29,16 @@ Wie oben VSCode übers Startemnü starten und Remote-Repository klonen:
 
 ![image](https://github.com/user-attachments/assets/717619eb-5fad-4430-90f2-06879e9c8cf2)
 
-Anschließend Git-URL eingeben und lokalen Ordner auswählen, indem dann das git-Verzeichnis erstellt wird.
+Anschließend
 
-## Im 
+- Git-URL des Remote-Repositories eingeben, z.B. "https://gitlab.aws.sopra.cloud/u004843/first-gitlab-project.git"
+- und lokalen Ordner auswählen, indem dann das git-Verzeichnis erstellt wird, z.B. "C:\Users\u004843\git-schulung"
+
+# Im VSCode zurecht finden
 
 ![image](https://github.com/user-attachments/assets/625731c2-9e1e-4c9d-bc7f-f1c7ad87b6ed)
 
 Oben in der Mitte seht ihr ein oder zwei Tabs: "Welcome" und "Release Notes". Beide können geschlossen werden.
-
-# Im VSCode zurecht finden
 
 Wichtige Bereiche im Editor für uns:
 
