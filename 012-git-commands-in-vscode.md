@@ -84,6 +84,13 @@ Analog zu `git commit --amend -m "neue commit message` in der Command-Line:
 
 ACHTUNG: nur lokale Commits ergänzen, die noch nicht ins Remote-Repo gepusht wurden, weil man die Commit-History verändert!
 
+
+# Letzten Commit rückgängig machen
+
+mit `<STRG> + <SHIFT> + P` die Command-Palette starten und dann `Git: Undo Last Commit` auswählen (bzw. schreiben)
+
+
+
 # Command-Palette in VSCode aufrufen
 
 mit `<STRG> + <SHIFT> + P`
