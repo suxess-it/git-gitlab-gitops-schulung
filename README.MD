@@ -22,6 +22,8 @@ Mentimeter-Umfrage: https://www.menti.com/almjzg2due93
 1. [Erstes GitLab-Projekt anlegen](https://github.com/suxess-it/git-gitlab-gitops-schulung/blob/main/010-gitlab-first-project.md)
 2. [Erste Schritte mit VSCode](https://github.com/suxess-it/git-gitlab-gitops-schulung/blob/main/011-vscode-first-steps.md)
 3. [Arbeiten mit Git in VSCode](https://github.com/suxess-it/git-gitlab-gitops-schulung/blob/main/012-git-commands-in-vscode.md)
+4. [In VSCode mit Remote-Branches arbeiten](https://github.com/suxess-it/git-gitlab-gitops-schulung/blob/main/013-vscode-branches.md)
+
 
 # GitOps
 
