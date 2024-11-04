@@ -1,5 +1,15 @@
 # Die wichtigsten Git-Befehle im VSCode
 
+Hier schauen wir uns nochmal genauer an was im VSCode der entsprechende Ersatz für die git-Befehle in der git-Bash sind.
+Wenn ihr wollt könnte ihr im VSCode dazu auch ein Terminal öffnen und die früher erlernten Befehle parallale dazu aufrufen (Menüpunkt "Terminal" -> "New Terminal"):
+
+![image](https://github.com/user-attachments/assets/d5acd4c1-8a06-45e5-8566-be3dc9c8f35a)
+
+
+## git status
+
+
+
 ## git add (Files stagen)
 
 ![image](https://github.com/user-attachments/assets/02173725-327b-4176-8674-1deaf98ff0f0)
