@@ -63,6 +63,14 @@ und wieder zurück auf den main-Branch:
 ![image](https://github.com/user-attachments/assets/588c4343-c6d7-4c1b-a8cf-d81ebe98c1e5)
 
 
+
+# Command-Palette in VSCode aufrufen
+
+mit `<STRG> + <SHIFT> + P`
+
+und dann beginnen "Git:" zu schreiben zeigt alle Git-Befehle an.
+
+
 ----------------------
 
 ## git push (Files aufs Remote-Repository pushen)
