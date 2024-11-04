@@ -54,9 +54,14 @@ oder für alle Änderungen in allen Files auf "View Changes":
 
 ![image](https://github.com/user-attachments/assets/543e429e-ace7-4ebc-a5a9-757b9e96af03)
 
+# Einen bestimmten Commit auschecken
 
-# TODO: Unterschied zwischen den beiden Commits anzeigen lassen
-# TODO: Einen bestimmten Commit auschecken
+![image](https://github.com/user-attachments/assets/4d03c187-edba-4c75-a777-1d79d6ea74ba)
+
+und wieder zurück auf den main-Branch:
+
+![image](https://github.com/user-attachments/assets/588c4343-c6d7-4c1b-a8cf-d81ebe98c1e5)
+
 
 ----------------------
 
