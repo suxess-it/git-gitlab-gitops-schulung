@@ -52,7 +52,8 @@ oder für alle Änderungen in allen Files auf "View Changes":
 
 ## Commit Historie anzeigen und darin enthaltene Änderungen
 
-![image](https://github.com/user-attachments/assets/a48bb046-93e0-4d85-aa66-e5878ce0ff12)
+![image](https://github.com/user-attachments/assets/543e429e-ace7-4ebc-a5a9-757b9e96af03)
+
 
 
 ## git push (Files aufs Remote-Repository pushen)
