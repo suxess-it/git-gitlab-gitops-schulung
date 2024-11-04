@@ -61,6 +61,8 @@ Schaut unter `Code` --> `Commits` die neuen Commits an, und unter `Code` --> `Re
 
 ## In VSCode wieder in den main-Branch wechseln und neue Commits pullen
 
+Analog zu `git checkout main` und `git pull`
+
 ![image](https://github.com/user-attachments/assets/fa467780-9067-4d61-91fe-9828b8e7e30d)
 
 "Synchronize Changes": ![image](https://github.com/user-attachments/assets/8a95ad84-9a2a-45c9-9fe3-3d1f7806763a)
