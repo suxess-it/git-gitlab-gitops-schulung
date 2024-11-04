@@ -41,9 +41,14 @@ Direkt im Explorer:
 
 ![image](https://github.com/user-attachments/assets/42cfd755-43de-44bd-9b78-728304826efa)
 
-In Source-Control View:
+In Source-Control View auf das jeweilige File klicken:
 
 ![image](https://github.com/user-attachments/assets/da95fcd4-7275-403c-a5da-cd3505bb3876)
+
+oder für alle Files auf "View Changes":
+
+![image](https://github.com/user-attachments/assets/ea50bb52-e4cf-4bc2-8664-7a5ac6c62035)
+
 
 ## Commit Historie anzeigen und darin enthaltene Änderungen
 
