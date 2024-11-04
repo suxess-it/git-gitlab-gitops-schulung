@@ -56,7 +56,7 @@ oder für alle Änderungen in allen Files auf "View Changes":
 
 ![image](https://github.com/user-attachments/assets/543e429e-ace7-4ebc-a5a9-757b9e96af03)
 
-# Einen bestimmten Commit auschecken
+## Einen bestimmten Commit auschecken
 
 ![image](https://github.com/user-attachments/assets/4d03c187-edba-4c75-a777-1d79d6ea74ba)
 
@@ -64,19 +64,19 @@ und wieder zurück auf den main-Branch:
 
 ![image](https://github.com/user-attachments/assets/588c4343-c6d7-4c1b-a8cf-d81ebe98c1e5)
 
-# Änderungen im Working-Directory rückgängig machen
+## Änderungen im Working-Directory rückgängig machen
 
 Änderungen in einem File rückgängig machen, d.h. den Stand auf den letzten Commit zurücksetzen, macht man über den Button "Discard Changes":
 
 ![image](https://github.com/user-attachments/assets/26deb930-6f2b-4bfa-8a3d-46689e5dd424)
 
-# Letzte Commit-Message korrigieren
+## Letzte Commit-Message korrigieren
 
 Analog zu `git commit --amend -m "neue commit message` in der Command-Line:
 
 ![image](https://github.com/user-attachments/assets/5556f665-f3a4-4ad7-8668-2aedfeebab8d)
 
-# Zusätzliche Änderungen beim letzten Commit ergänzen
+## Zusätzliche Änderungen beim letzten Commit ergänzen
 
 Änderungen beim letzten Commit noch ergänzen kann man, indem die neue Änderung gestaged wird und dann "Commit (Amend)" ausgewählt wird.
 
@@ -84,38 +84,12 @@ Analog zu `git commit --amend -m "neue commit message` in der Command-Line:
 
 ACHTUNG: nur lokale Commits ergänzen, die noch nicht ins Remote-Repo gepusht wurden, weil man die Commit-History verändert!
 
-
-# Letzten Commit rückgängig machen
+## Letzten Commit rückgängig machen
 
 mit `<STRG> + <SHIFT> + P` die Command-Palette starten und dann `Git: Undo Last Commit` auswählen (bzw. schreiben)
 
-
-
-# Command-Palette in VSCode aufrufen
+## Command-Palette in VSCode aufrufen
 
 mit `<STRG> + <SHIFT> + P`
 
 und dann beginnen "Git:" zu schreiben zeigt alle Git-Befehle an.
-
-
-----------------------
-
-## git push (Files aufs Remote-Repository pushen)
-
-![image](https://github.com/user-attachments/assets/78ca1a82-7db5-4a4f-9fa0-4528e0dfdaa9)
-
-# Git-Projekt im GitLab bearbeiten
-
-TODO:
-
-- Wo sieht man die gepushten Commits (Source Control View, Source Control Graph links unten)
-- GitLab Plugins? (checken welche defaultmäßig installiert sind, und welche man braucht)
-- Feature-Branches
-- Erstellen von Merge-Requests
-
-# Wichtige Git-Projekt Einstellungen im GitLab
-
-TODO:
-
-- protected branches
-- Merge Request Einstellungen
