@@ -26,18 +26,38 @@ Ganz unten im VSCode solltest du jetzt auch den neuen Branch-Namen sehen.
 
 Erstelle jetzt in diesem neuen Branch ein neues File `neues-feature.txt`.
 
-# Git-Projekt im GitLab bearbeiten
+In der Source-Control-View sieht man den neuen Branch:
 
-TODO:
+![image](https://github.com/user-attachments/assets/abcbd566-4011-434a-af5a-d8679f94c407)
 
-- Wo sieht man die gepushten Commits (Source Control View, Source Control Graph links unten)
-- GitLab Plugins? (checken welche defaultmäßig installiert sind, und welche man braucht)
-- Feature-Branches
-- Erstellen von Merge-Requests
+und mit "Publish Branch" wird der Branch auch auf das Remote-Repository in GitLab gepusht:
 
-# Wichtige Git-Projekt Einstellungen im GitLab
+![image](https://github.com/user-attachments/assets/70f5a671-445e-40f4-bd1a-cefd485b0933)
 
-TODO:
+Diesen neuen Feature-Branch sieht man jetzt auch im GitLab-Projekt:
 
-- protected branches
-- Merge Request Einstellungen
+![image](https://github.com/user-attachments/assets/d59ced66-28b2-473b-b5ae-b784597177e9)
+
+
+# Merge-Request in GitLab erstellen
+
+Sobald ein neuer Branch im GitLab auftaucht wird in unterschiedlichen Views schon automatisch darauf hingewiesen und die Möglichkeit einen Merge-Request zu erstellen, angeboten:
+
+![image](https://github.com/user-attachments/assets/6faff11d-5d5c-4a99-a4ad-a80858eee835)
+
+So kann man immer einen neuen Merge-Request im GitLab erstellen:
+
+![image](https://github.com/user-attachments/assets/6a6f769c-52c0-4a6c-b9c5-227371feceb4)
+
+Source-Branch: der Feature-Branch mit den neuen Commits
+Target-Branch: meistens `main`, wo die neuen Commits ergänzt werden sollen.
+
+`Create merge request` --> `Merge`
+
+Merge-Requests bleiben im System erhalten unter `Code` --> `Merge requests`
+
+Schaut unter `Code` --> `Commits` die neuen Commits an, und unter `Code` --> `Repository Graph` den Commit-Graphen.
+
+
+# In VSCode wieder in den main-Branch wechseln und neue Commits pullen
+
