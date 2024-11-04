@@ -1,4 +1,4 @@
-# In VSCode mit GitLab-Repos arbeiten
+# In VSCode mit Remote-Branches arbeiten
 
 In diesem Abschnitt lernen wir wie man im VSCode mit Remote-Repositories arbeitet.
 
