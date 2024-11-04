@@ -76,6 +76,13 @@ Analog zu `git commit --amend -m "neue commit message` in der Command-Line:
 
 ![image](https://github.com/user-attachments/assets/5556f665-f3a4-4ad7-8668-2aedfeebab8d)
 
+# Zusätzliche Änderungen beim letzten Commit ergänzen
+
+Änderungen beim letzten Commit noch ergänzen kann man, indem die neue Änderung gestaged wird und dann "Commit (Amend)" ausgewählt wird.
+
+![image](https://github.com/user-attachments/assets/a5d74f9f-4486-4b6d-97c1-38407812573e)
+
+ACHTUNG: nur lokale Commits ergänzen, die noch nicht ins Remote-Repo gepusht wurden, weil man die Commit-History verändert!
 
 # Command-Palette in VSCode aufrufen
 
