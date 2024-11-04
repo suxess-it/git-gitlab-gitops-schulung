@@ -55,6 +55,10 @@ oder für alle Änderungen in allen Files auf "View Changes":
 ![image](https://github.com/user-attachments/assets/543e429e-ace7-4ebc-a5a9-757b9e96af03)
 
 
+# TODO: Unterschied zwischen den beiden Commits anzeigen lassen
+# TODO: Einen bestimmten Commit auschecken
+
+----------------------
 
 ## git push (Files aufs Remote-Repository pushen)
 
