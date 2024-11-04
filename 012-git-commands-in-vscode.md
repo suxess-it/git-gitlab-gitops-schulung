@@ -33,6 +33,8 @@ Versucht auch mal Files zu löschen. Wie wird das im Explorer bzw. der Source-Co
 
 man kann sich auch das vorige "stagen" sparen und direkt commiten, dann wird man gefragt ob man alle Änderungen stagen will (auch neue Files!)
 
+Mehrzeilige Commits: einfach mit Enter neue Zeile hinzufügen. Nur `STRG+ENTER` führt den Commit aus (bzw. der Button "Commit")
+
 ## git diff
 
 Ändert ein bestehendes File, und lasst euch dann die Änderungen so anzeigen:
