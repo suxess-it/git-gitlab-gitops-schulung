@@ -39,7 +39,7 @@ Diesen neuen Feature-Branch sieht man jetzt auch im GitLab-Projekt:
 ![image](https://github.com/user-attachments/assets/d59ced66-28b2-473b-b5ae-b784597177e9)
 
 
-# Merge-Request in GitLab erstellen
+## Merge-Request in GitLab erstellen
 
 Sobald ein neuer Branch im GitLab auftaucht wird in unterschiedlichen Views schon automatisch darauf hingewiesen und die Möglichkeit einen Merge-Request zu erstellen, angeboten:
 
@@ -59,5 +59,9 @@ Merge-Requests bleiben im System erhalten unter `Code` --> `Merge requests`
 Schaut unter `Code` --> `Commits` die neuen Commits an, und unter `Code` --> `Repository Graph` den Commit-Graphen.
 
 
-# In VSCode wieder in den main-Branch wechseln und neue Commits pullen
+## In VSCode wieder in den main-Branch wechseln und neue Commits pullen
+
+![image](https://github.com/user-attachments/assets/fa467780-9067-4d61-91fe-9828b8e7e30d)
+
+"Synchronize Changes": ![image](https://github.com/user-attachments/assets/8a95ad84-9a2a-45c9-9fe3-3d1f7806763a)
 
