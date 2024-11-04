@@ -50,7 +50,7 @@ Weitere nützliche Dokumentation zu VSCode:
 - https://code.visualstudio.com/docs/introvideos/basics
 - https://code.visualstudio.com/docs/getstarted/userinterface
 
-# Neue Files anlegen
+# Arbeiten mit Files und Verzeichnissen
 
 Über das Context-Menü im Explorer (rechte Maustaste):
 
