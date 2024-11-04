@@ -72,6 +72,8 @@ und wieder zurück auf den main-Branch:
 
 # Letzte Commit-Message korrigieren
 
+Analog zu `git commit --amend -m "neue commit message` in der Command-Line:
+
 ![image](https://github.com/user-attachments/assets/5556f665-f3a4-4ad7-8668-2aedfeebab8d)
 
 
