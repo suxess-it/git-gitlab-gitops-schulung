@@ -64,12 +64,15 @@ und wieder zurück auf den main-Branch:
 
 ![image](https://github.com/user-attachments/assets/588c4343-c6d7-4c1b-a8cf-d81ebe98c1e5)
 
-
 # Änderungen im Working-Directory rückgängig machen
 
 Änderungen in einem File rückgängig machen, d.h. den Stand auf den letzten Commit zurücksetzen, macht man über den Button "Discard Changes":
 
 ![image](https://github.com/user-attachments/assets/26deb930-6f2b-4bfa-8a3d-46689e5dd424)
+
+# Letzte Commit-Message korrigieren
+
+![image](https://github.com/user-attachments/assets/5556f665-f3a4-4ad7-8668-2aedfeebab8d)
 
 
 # Command-Palette in VSCode aufrufen
