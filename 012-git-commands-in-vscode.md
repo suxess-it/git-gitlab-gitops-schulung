@@ -5,6 +5,8 @@ Wenn ihr wollt könnte ihr im VSCode dazu auch ein Terminal öffnen und die frü
 
 ![image](https://github.com/user-attachments/assets/d5acd4c1-8a06-45e5-8566-be3dc9c8f35a)
 
+Es spricht auch absolut nichts dagegen weiterhin im Terminal die Command-Line-Befehle zu verwenden, anstatt im VSCode zu klicken.
+
 
 ## git status
 
