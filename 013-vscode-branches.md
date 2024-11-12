@@ -14,7 +14,7 @@ Im Gitlab-Projekt solltet ihr diese Commits jetzt auch sehen:
 
 Klick mal in die Commits und lass dir die Details anzeigen.
 
-## In VSCode Branches erstellen und auf GitLab pushen
+## Branches erstellen und auf GitLab pushen
 
 Analog zu `git checkout -b feat/neues-feature` kann man im VSCode so einen neuen Branch erstellen:
 
@@ -59,7 +59,7 @@ Merge-Requests bleiben im System erhalten unter `Code` --> `Merge requests`
 Schaut unter `Code` --> `Commits` die neuen Commits an, und unter `Code` --> `Repository Graph` den Commit-Graphen.
 
 
-## In VSCode wieder in den main-Branch wechseln und neue Commits pullen
+## Wieder in den main-Branch wechseln und neue Commits pullen
 
 Analog zu `git checkout main` und `git pull`
 
