@@ -66,6 +66,14 @@ notwendig. D.h. jeder Branch in einem lokalen Git-Repo könnte rein theoretisch 
 Seht ihr jetzt den Hinweis, wie ihr den Merge-Request erstellen könnt?
 
 
+## Merge-Request erstellen
+
+Mit dem vorherigen `git push` Befehl wurde vermutlich bereits ein Link ausgegeben wie man einen Merge-Request erstellen kann. Entweder kann dieser geklickt werden oder im GitLab der [Merge-Request erstellt werden](013-vscode-branches.md#merge-request-in-gitlab-erstellen)
+
+## Merge-Requests sind Team-Arbeit
+
+Merge-Requests können dazu verwendet werden über ein neues Feature im Team zu diskutieren, eine Kollegin das Feature reviewen und approven zu lassen oder auch gemeinsam neue Commits in dem Feature-Branch zu erstellen.
+
 ## Merge-Konflikt auflösen
 
 Wann entstehen Merge-Konflikte:
