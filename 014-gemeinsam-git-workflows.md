@@ -8,3 +8,5 @@ Zusammen in eine Feature-Branch arbeiten (zweite checkt Feature-Branch aus, füg
 MR Review und Approve
 
 Welche andere Dinge sieht man bei Merge-Requests noch? Was sind Best-Practices?
+
+Merge-Request Möglichkeiten (Merge-Commit, Squash and Merge, Fast-Forward, ... in Merge-Request den Feature-Branch updaten? geht das?)
