@@ -3,3 +3,4 @@
 - Benutzer, Rollen, Projekte, Subprojekte
 - Wichtige Projekt-Einstellungen wie protected branches, merge-request einstellungen, tokens, ... was kann man im Projekt sonst noch einstellen?
 - Andere Features wie Issue-Tracking, Features, ...
+- Files direkt in GitLab bearbeiten (WebIDE oder direkt)
