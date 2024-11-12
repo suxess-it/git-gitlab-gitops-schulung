@@ -74,11 +74,42 @@ Mit dem vorherigen `git push` Befehl wurde vermutlich bereits ein Link ausgegebe
 
 Merge-Requests können dazu verwendet werden über ein neues Feature im Team zu diskutieren, eine Kollegin das Feature reviewen und approven zu lassen oder auch gemeinsam neue Commits in dem Feature-Branch zu erstellen.
 
+### Code-Review
+
+Man kann den Merge-Request einer anderen Person zuweisen, einen Reviewer eintragen oder konfigurieren dass der MR approved werden muss.
+
+![image](https://github.com/user-attachments/assets/fc1274d6-8ca8-4028-99e4-1e6f995b3ad6)
+
+Probiert es gleich aus: 
+
+* wenn man bei "Approval required" eine Zahl größer 0 angibt, müssen andere Kollegen den Merge-Request approven, damit gemerged werden kann.
+* tragt einen Reviewer ein, die Person sollte dann links bei "Merge Requests" auch "Review requests" sehen und einen Review starten können.
+
+Ein Reviewer kann den Code commentieren, approven oder eine Änderung verlangen.
+
+![image](https://github.com/user-attachments/assets/972d8f9c-0f8e-4303-9f3a-17af5f8e935e)
+
+Man kann auch direkt im Tab "Changes" seine Kommentare bei der jeweiligen Code-Zeile ergänzen:
+
+![image](https://github.com/user-attachments/assets/38c280e2-a7c9-4104-ad34-156070ad5d40)
+
+oder in der Overview ein Kommentar abgeben:
+
+![image](https://github.com/user-attachments/assets/aaacbc9d-6e05-4f40-909c-c97be86d6341)
+
+### Approval Rules
+
+Approval Rules können pro Merge-Request gesetzt werden, oder standardmäßig auf Projektebene. Auf Projektebene ist es sinnvoller, um einen Approve zu erzwingen.
+
+### Git-Pipelines als Quality-Gates
+
+Man kann auch konfigurieren dass alle Git-Pipelines erfolgreich ("grün") sein müssen, bevor der Merge-Request gemerged werden kann.
+
 ## Merge-Konflikt auflösen
 
 Wann entstehen Merge-Konflikte:
 
-Mergekonflikte entstehen, wenn in der gleichen Zeile derselben Datei von verschiedenen Personen konkurrierende Änderungen vorgenommen werden oder wenn eine Person eine Datei bearbeitet und eine andere Person die Datei löscht. 
+Merge-Konflikte entstehen, wenn in der gleichen Zeile derselben Datei von verschiedenen Personen konkurrierende Änderungen vorgenommen werden oder wenn eine Person eine Datei bearbeitet und eine andere Person die Datei löscht. 
 
 Wichtig: die gleiche Datei an einer anderen Stelle editieren resultiert im Normalfall nicht in einem Merge-Konflikt!
 
