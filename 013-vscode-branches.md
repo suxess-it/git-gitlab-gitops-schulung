@@ -14,7 +14,7 @@ Im Gitlab-Projekt solltet ihr diese Commits jetzt auch sehen:
 
 Klick mal in die Commits und lass dir die Details anzeigen.
 
-## Branches erstellen und auf GitLab pushen
+## Branches erstellen
 
 Analog zu `git checkout -b feat/neues-feature` kann man im VSCode so einen neuen Branch erstellen:
 
@@ -30,7 +30,9 @@ In der Source-Control-View sieht man den neuen Branch:
 
 ![image](https://github.com/user-attachments/assets/abcbd566-4011-434a-af5a-d8679f94c407)
 
-und mit "Publish Branch" wird der Branch auch auf das Remote-Repository in GitLab gepusht:
+## und auf GitLab pushen
+
+Mit "Publish Branch" wird der Branch auch auf das Remote-Repository in GitLab gepusht:
 
 ![image](https://github.com/user-attachments/assets/70f5a671-445e-40f4-bd1a-cefd485b0933)
 
