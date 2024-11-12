@@ -16,22 +16,36 @@ Dieser Workflow entspricht also 1:1 den bisher bekannten Methoden in diesem Skri
 
 Das in der Präsentation angegebene GitLab-Projekt soll lokal im VSCode geöffnet werden. Mittlerweile kennen wir zwei Varianten wie das möglich ist.
 
-1) In der git-Bash das Repository klonen und dann den Folder im VSCode öffnen
-2) Direkt im VSCode das Repository klonen
+Variante 1: In der git-Bash das Repository klonen und dann den Folder im VSCode öffnen
 
-Darauf achten dass der main-Branch ausgecheckt ist und mit aktuellen Stand vom `origin/main` hat. Wie macht man das?
+```
+git clone <git-repo>
+cd <git-repo-verzeichnis>
+```
 
+Variante 2: Direkt im VSCode das Repository klonen
 
-## Git-Projekt weiterentwickeln
+siehe [First Steps](011-vscode-first-steps.md#%C3%BCber-das-windows-startmen%C3%BC-und-bereits-geklontes-git-repository-%C3%B6ffnen)
 
-Wie im Gitlab-Flow definiert werden Änderungen immer über einen Feature-Branch gemacht. 
-Deshalb muss jetzt vom main-Branch aus ein neuer Feature-Branch abgezweigt werden.
+## main-Branch aktualisieren
+
+Darauf achten dass der main-Branch ausgecheckt ist und mit dem aktuellen Stand vom `origin/main` hat. Wie macht man das?
+
+```
+git checkout main
+git pull
+```
+
+## Im Git-Projekt weiterentwickeln
 
 Aufgabe: Jeder Schulungsteilnehmer erstellt in seinem Feauture-Branch ein neues File mit dem Namen "<Vorname>_<Nachname>.txt" und ergänzt im README.md in der Mitglieder-Liste deinen Namen.
 
+Wie im Gitlab-Flow definiert, werden Änderungen immer über einen Feature-Branch gemacht. 
+Deshalb muss jetzt vom main-Branch aus ein neuer Feature-Branch abgezweigt werden.
 
+Im Terminal mit `git checkout -b feat/add-<vorname>` oder [in VSCode GUI](013-vscode-branches.md#branches-erstellen-und-auf-gitlab-pushen).
 
-Erstellen von Branches
+## 
 
 Updaten von Branches (git rebase)
 Auflösen von Merge-Konflikten
