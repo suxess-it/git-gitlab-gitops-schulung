@@ -66,8 +66,15 @@ notwendig. D.h. jeder Branch in einem lokalen Git-Repo könnte rein theoretisch 
 Seht ihr jetzt den Hinweis, wie ihr den Merge-Request erstellen könnt?
 
 
+## Merge-Konflikt auflösen
 
-## 
+Wenn in zwei Feature-Branches dieselbe Zeile in derselben Datei geändert wird, entsteht ein sog. Merge-Konflikt, der manuell aufgelöst werden muss:
+
+![image](https://github.com/user-attachments/assets/1db6e3a3-d2fa-46a3-98f0-11ad6163fdf1)
+
+TODO: wie auflösen?
+
+
 
 Updaten von Branches (git rebase)
 Auflösen von Merge-Konflikten
