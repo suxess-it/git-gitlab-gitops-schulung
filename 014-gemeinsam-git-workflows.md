@@ -68,7 +68,13 @@ Seht ihr jetzt den Hinweis, wie ihr den Merge-Request erstellen könnt?
 
 ## Merge-Konflikt auflösen
 
-Wenn in zwei Feature-Branches dieselbe Zeile in derselben Datei geändert wird, entsteht ein sog. Merge-Konflikt, der manuell aufgelöst werden muss:
+Wann entstehen Merge-Konflikte:
+
+Mergekonflikte entstehen, wenn in der gleichen Zeile derselben Datei von verschiedenen Personen konkurrierende Änderungen vorgenommen werden oder wenn eine Person eine Datei bearbeitet und eine andere Person die Datei löscht. 
+
+Wichtig: die gleiche Datei an einer anderen Stelle editieren resultiert im Normalfall nicht in einem Merge-Konflikt!
+
+Im Merge-Request schaut das dann so aus:
 
 ![image](https://github.com/user-attachments/assets/1db6e3a3-d2fa-46a3-98f0-11ad6163fdf1)
 
