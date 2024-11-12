@@ -55,7 +55,17 @@ git push
 
 oder [in VSCode commitieren](012-git-commands-in-vscode.md#git-add-files-stagen) und [auf das Remote-Repository pushen](013-vscode-branches.md#und-auf-gitlab-pushen).
 
-Welcher Hinweis kommt nach dem `git push`?
+Welcher Hinweis kommt nach dem `git push`? Git weiß noch nicht wohin dieser Branch gepusht werden soll, deshalb ist einmalig
+
+```
+git push --set-upstream origin feat/add-<vorname>
+```
+
+notwendig. D.h. jeder Branch in einem lokalen Git-Repo könnte rein theoretisch mit unterschiedliche Remote-Repositories verbunden sein!
+
+Seht ihr jetzt den Hinweis, wie ihr den Merge-Request erstellen könnt?
+
+
 
 ## 
 
