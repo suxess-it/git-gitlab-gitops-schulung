@@ -117,26 +117,65 @@ Im Merge-Request schaut das dann so aus:
 
 ![image](https://github.com/user-attachments/assets/1db6e3a3-d2fa-46a3-98f0-11ad6163fdf1)
 
-TODO: wie auflösen?
+Man kann den Konflikt entweder direkt im GitLab oder lokal auflösen.
+
+### In Gitlab auflösen
+
+![image](https://github.com/user-attachments/assets/62f1528e-4f09-499d-bab0-988dc7154178)
+
+und dann entweder 
+* entscheiden ob die eigene Änderung oder die des Target-Branch verwendet werden soll.
+* oder mit "Edit inline" den Konflikt anders lösen (beide Änderungen zusammenführen, ...)
+
+![image](https://github.com/user-attachments/assets/248c00cc-0819-4901-8a0a-662265035b7f)
+
+Was passiert im Hintergrund? Der main-Branch wird in den Feature-Branch mit einem sog. "Merge-Commit" gemerged. Schau dir diesen Commit in der Commit-Overview an. Er hat zwei (!) Parent-Commits:
+
+![image](https://github.com/user-attachments/assets/66b2052c-7991-445a-bfba-ac23dc756517)
+
+Damit kann der Merge-Request wieder in den main-Branch gemerged werden.
+
+### Lokal auflösen
+
+Dasselbe, was wir davor in GitLab gemacht haben, kann man auch lokal machen. Hat jemand eine Idee wie?
 
 
+### Mehrere EntwicklerInnen an einem Merge-Request arbeiten lassen
 
-Updaten von Branches (git rebase)
-Auflösen von Merge-Konflikten
-Merge-Requests erstellen
-Zusammen in eine Feature-Branch arbeiten (zweite checkt Feature-Branch aus, fügt Commits hinzu) ... was ändert sich im Merge-Request?
-MR Review und Approve
+Den Source-Branch eines Merge-Requests können auch andere Entwickler auschecken, Commits ergänzen und wieder pushen.
 
-Welche andere Dinge sieht man bei Merge-Requests noch? Was sind Best-Practices?
+Probiert das gleich aus und ergänzt den Source-Branch einer Kollegin mit einem zusätzlichen Commit.
 
-Merge-Request Möglichkeiten (Merge-Commit, Squash and Merge, Fast-Forward, ... in Merge-Request den Feature-Branch updaten? geht das?)
+### Quick-Action: Rebase vom Source-Branch
 
+Manchmal will man den Source-Branch eines Merge-Requests mit den aktuellsten Commits vom Target-Branch (main) updaten.
 
+In der GitLab-UI habe ich keinen Button dazu gefunden, aber über die sog. "Quick-Actions" in den Kommentaren des Merge-Requests geht das:
 
-
-Namenskonventionen für Branches und Commits (conventional commits, conventional branches?)
+![image](https://github.com/user-attachments/assets/86efe4f7-f588-47ee-9632-c5c94e1f6b25)
 
 
-Best Pratices kurz gemeinsam durchgehen: https://about.gitlab.com/topics/version-control/what-are-gitlab-flow-best-practices/
+## Merge-Strategien
+
+Beim Mergen eines Merge-Requests gibt es standardmäßig zwei Möglichkeiten zu Auswahl:
+
+- "Normaler" Merge: fügt alle Commits vom Source-Branch mit einem zusätzlichen Merge-Commit auf den Target-Branch
+- Squash Commits: alle Commits des Source-Branch werden zu einem gemeinsamen Commit zusammengefasst und mit einem zusätzlichen Merge-Commit an den Target-Branch hinzugefügt (also insgesamt zwei Commits)
+
+![image](https://github.com/user-attachments/assets/2095ed7d-1b15-41c4-8fe7-04265e5c391b)
+
+Falls es in den Repository-Einstellungen aktiviert ist, könnte man auch "Fast-Forward Merges" durchführen. Dabei wird kein Merge-Commit erstellt, der Feature-Branch muss deshalb aber up-to-date mit dem main-Branch sein.
+
+## Weitere Merge-Einstellungen
+
+![image](https://github.com/user-attachments/assets/e2eaba00-09cb-4f98-968d-8826d387b803)
+
+Die konkreten Einstellungen können wir bei Bedarf noch durchgehen.
+
+## Weitere Best Practices
+
+siehe https://about.gitlab.com/topics/version-control/what-are-gitlab-flow-best-practices/
+
+Namenskonventionen für Branches und Commits (conventional commits, conventional branches?): TODO
 
 
