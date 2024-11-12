@@ -45,6 +45,18 @@ Deshalb muss jetzt vom main-Branch aus ein neuer Feature-Branch abgezweigt werde
 
 Im Terminal mit `git checkout -b feat/add-<vorname>` oder [in VSCode GUI](013-vscode-branches.md#branches-erstellen-und-auf-gitlab-pushen).
 
+Dann die Änderungen wie in der Aufgabenbeschreibung durchführen und commitieren.
+
+```
+git add .
+git commit -a -m "feat: add <vorname>"
+git push
+```
+
+oder [in VSCode commitieren](012-git-commands-in-vscode.md#git-add-files-stagen) und [auf das Remote-Repository pushen](013-vscode-branches.md#und-auf-gitlab-pushen).
+
+Welcher Hinweis kommt nach dem `git push`?
+
 ## 
 
 Updaten von Branches (git rebase)
