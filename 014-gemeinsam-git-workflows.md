@@ -85,6 +85,10 @@ Probiert es gleich aus:
 * wenn man bei "Approval required" eine Zahl größer 0 angibt, müssen andere Kollegen den Merge-Request approven, damit gemerged werden kann.
 * tragt einen Reviewer ein, die Person sollte dann links bei "Merge Requests" auch "Review requests" sehen und einen Review starten können.
 
+Hier sieht man die Assignments und Review Requests für einen selbst:
+
+![image](https://github.com/user-attachments/assets/67155530-3ab4-4160-a4ee-01d87f6e9233)
+
 Ein Reviewer kann den Code commentieren, approven oder eine Änderung verlangen.
 
 ![image](https://github.com/user-attachments/assets/972d8f9c-0f8e-4303-9f3a-17af5f8e935e)
