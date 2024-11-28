@@ -4,10 +4,16 @@
 
 ![image](https://github.com/user-attachments/assets/2797e5fc-4bfa-4308-b15c-4071128130f1)
 
-"Allowed to merge" means that a member with the stated role can click on the "Merge" button on a merge request to merge the changes into a protected branch.
+"Allowed to merge" means that a member with the stated role can click on the "Merge" button on a merge request to merge the changes into a protected branch, also without fulfilling the approval rule!
 "Allowed to push and merge" is more permissive. The member with the stated role can additionally push directly to protected branches without requiring them to create a new branch/MR.
 
 ![image](https://github.com/user-attachments/assets/f08f2cb7-cc81-4e52-88cf-09b1aea808b9)
+
+If you want everyone to only merge when all approval rules are fulfilled, use this setting:
+
+![image](https://github.com/user-attachments/assets/11b4b69d-5147-4fb2-bb23-4323a3a4cebb)
+
+
 
 ## Merge-Request Konfigurationen
 
