@@ -89,6 +89,12 @@ Hier sieht man die Assignments und Review Requests für einen selbst:
 
 ![image](https://github.com/user-attachments/assets/67155530-3ab4-4160-a4ee-01d87f6e9233)
 
+Als Reviewer kann man einen Review starten indem man anfängt den Code zu kommentieren und dann "Start a review" klickt.
+
+![image](https://github.com/user-attachments/assets/6860eb30-1b6b-427b-a8d1-524f158581c5)
+
+Anschließend kann man im Code solange kommentieren bis man "Finished review" klickt.
+
 Ein Reviewer kann den Code commentieren, approven oder eine Änderung verlangen.
 
 ![image](https://github.com/user-attachments/assets/972d8f9c-0f8e-4303-9f3a-17af5f8e935e)
