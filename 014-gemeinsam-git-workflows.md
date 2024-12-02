@@ -186,6 +186,4 @@ Die konkreten Einstellungen können wir bei Bedarf noch durchgehen.
 
 siehe https://about.gitlab.com/topics/version-control/what-are-gitlab-flow-best-practices/
 
-Namenskonventionen für Branches und Commits (conventional commits, conventional branches?): TODO
-
 
