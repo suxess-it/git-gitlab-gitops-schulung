@@ -23,9 +23,12 @@ Mentimeter-Umfrage: https://www.menti.com/almjzg2due93
 2. [Erste Schritte mit VSCode](https://github.com/suxess-it/git-gitlab-gitops-schulung/blob/main/011-vscode-first-steps.md)
 3. [Arbeiten mit Git in VSCode](https://github.com/suxess-it/git-gitlab-gitops-schulung/blob/main/012-git-commands-in-vscode.md)
 4. [In VSCode mit Remote-Branches arbeiten](https://github.com/suxess-it/git-gitlab-gitops-schulung/blob/main/013-vscode-branches.md)
-
+5. [Gemeinsam in GitLab-Projekten arbeiten](https://github.com/suxess-it/git-gitlab-gitops-schulung/blob/main/014-gemeinsam-git-workflows.md)
+6. [GitLab Struktur und Konfiguration](https://github.com/suxess-it/git-gitlab-gitops-schulung/blob/main/015-gitlab-struktur-konfiguration.md)
 
 # GitOps
+
+1. tbd
 
 # Lern-Tools
 
