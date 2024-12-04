@@ -9,11 +9,6 @@
 
 ![image](https://github.com/user-attachments/assets/f08f2cb7-cc81-4e52-88cf-09b1aea808b9)
 
-Mit dieser Einstellung kann niemand mergen (bis vor kurzem hieß das noch "es müssen die Approval Rules erfüllt sein .. geht jetzt aber nicht mehr, und muss ich mir nochmal genau anschauen)
-
-![image](https://github.com/user-attachments/assets/11b4b69d-5147-4fb2-bb23-4323a3a4cebb)
-
-
 
 ## Merge-Request Konfigurationen
 
