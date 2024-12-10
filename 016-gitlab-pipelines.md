@@ -12,7 +12,9 @@ mein-job:
   script:
     - echo "hallo welt!"
 ```
-Dieser Job würde jetzt auf einem GitLab-Runner im Default-Container von GitLab ausgeführt werden. 
+Dieser Job würde jetzt auf einem GitLab-Runner im Default-Container von GitLab ausgeführt werden.
+
+Details zu Jobs siehe https://docs.gitlab.com/ee/ci/jobs/
 
 ### .gitlab-ci.yml erstellen
 
@@ -21,8 +23,6 @@ Es gibt mehrere Arten wie ein `.gitlab-ci.yml` erstellt werden kann. Da es einfa
 Man kann aber auch den Pipeline-Editor direkt im Gitlab verwenden.
 
 ![image](https://github.com/user-attachments/assets/5814f8fa-9dd2-4878-953b-9a43a00c3317)
-
-Details zu Jobs siehe https://docs.gitlab.com/ee/ci/jobs/
 
 Sobald dieser Job am GitLab-Server in irgendeinem Branch committed wurde, wird er schon ausgeführt:
 
