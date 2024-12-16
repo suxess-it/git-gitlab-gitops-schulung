@@ -247,6 +247,8 @@ Wann werden hier welche Jobs ausgeführt? Probiere es aus!
 
 ![image](https://github.com/user-attachments/assets/d4caedcb-04eb-41b6-92cc-8f73fe4ae8a6)
 
+Zusätzlich können auch `changes` Rules definiert werden, um einzuschränken bei welchen Dateiänderungen die Jobs laufen sollen.
+
 siehe https://docs.gitlab.com/ee/ci/jobs/job_rules.html
 und https://docs.gitlab.com/ee/ci/yaml/index.html#rules
 
