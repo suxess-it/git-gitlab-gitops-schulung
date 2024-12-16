@@ -26,9 +26,9 @@ Mentimeter-Umfrage: https://www.menti.com/almjzg2due93
 5. [Gemeinsam in GitLab-Projekten arbeiten](https://github.com/suxess-it/git-gitlab-gitops-schulung/blob/main/014-gemeinsam-git-workflows.md)
 6. [GitLab Struktur und Konfiguration](https://github.com/suxess-it/git-gitlab-gitops-schulung/blob/main/015-gitlab-struktur-konfiguration.md)
 
-# GitOps
+# Pipelines / IaC / GitOps
 
-1. tbd
+1. [GitLab Pipelines](016-gitlab-pipelines.md)
 
 # Lern-Tools
 
