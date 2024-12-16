@@ -219,4 +219,5 @@ Man kann auch Logik von Pipelines in sogenannten Components wiederverwendbar mac
 ## Pipeline Syntax Referenz
 
 siehe https://docs.gitlab.com/ee/ci/yaml/index.html
+Predefined Variables: https://docs.gitlab.com/ee/ci/variables/predefined_variables.html
 
