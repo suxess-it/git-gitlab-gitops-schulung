@@ -94,6 +94,8 @@ Weitere Details und Beispiele: https://docs.gitlab.com/ee/ci/pipelines/pipeline_
 
 ## Status von Jobs und Pipelines checken
 
+Wenn wir im Gitlab-Projekt links auf "Build" --> "Pipelines" klicken sehen wir alle Pipelines die gerade laufen bzw. schon beendet worden sind:
+
 ![image](https://github.com/user-attachments/assets/0355ae20-b08b-4c06-b2b7-15c497269f7c)
 
 Was sieht man in diesem Bild?
@@ -109,6 +111,7 @@ Was sieht man in diesem Bild?
 * Created by: Wer hat die Pipeline gestartet? (meistens der Committer)
 * Stages: erfolgreich oder nicht
 
+Wenn man auf die Pipeline klickt (Status-Symbol in erster Spalte oder auf die Pipeline-ID) dann kann man sich mehr Details zur Pipeline anschauen.
 
 ## Wann werden Pipelines aufgerufen
 
