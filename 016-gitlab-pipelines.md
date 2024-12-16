@@ -134,9 +134,26 @@ Im Menü über "Build" --> "Pipeline Schedules" --> "New Schedule"
 ### Bei Git-Events
 
 Standardmäßig werden Pipelines bei jeder Änderung in Git getriggert. Wenn man hier expliziertere Regeln anwenden will, muss man Rules definieren.
+Dann werden die Pipelines und Jobs nur mehr ausgeführt, wenn die  jeweilige Regel erfüllt ist.
 
+#### Workflow-Rules
+
+Mit sog. Workflow-Rules bestimmt man, ob die Pipeline überhaupt erstellt wird.
+
+Beispiel:
+
+```
+workflow:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+      when: never
+```
 siehe https://docs.gitlab.com/ee/ci/yaml/workflow.html
+
+Mit sog. Job-Rules bestimmt man, ob der Job in dieser Pipeline aufgerufen wird.
+
 siehe https://docs.gitlab.com/ee/ci/yaml/index.html#rules
+
 
 Keyword `only` und `except` sind legacy. Können weiterhin verwendet werden, aber nicht in Kombination mit `rules`.
 
