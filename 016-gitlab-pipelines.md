@@ -190,6 +190,9 @@ Runner werden üblicherweise von den GitLab-Administratoren zur Verfügung geste
 
 ![image](https://github.com/user-attachments/assets/b26eef8f-39e6-4a48-b5aa-f7512078b725)
 
+## Pipeline Components
+
+Man kann auch Logik von Pipelines in sogenannten Components wiederverwendbar machen: https://docs.gitlab.com/ee/ci/components/
 
 ## Pipeline Syntax Referenz
 
