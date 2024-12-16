@@ -117,14 +117,13 @@ Wenn man auf die Pipeline klickt (Status-Symbol in erster Spalte oder auf die Pi
 
 ### Manuell
 
-Pipelines können auch manuell gestartet werden über den Menüpunkt "Build" --> "Pipelines -- "Run Pipeline"
+Pipelines können manuell gestartet werden über den Menüpunkt "Build" --> "Pipelines -- "Run Pipeline"
 
 ![image](https://github.com/user-attachments/assets/5740685b-0c55-4dcc-9e32-1ccca6337d24)
 
 Dann den Branch auswählen und ggf. Variablen definieren:
 
 ![image](https://github.com/user-attachments/assets/0b060dcc-5880-4226-9c9a-6c4d66be13fe)
-
 
 ### Gescheduled
 
@@ -150,6 +149,10 @@ Wenn Pipelines bei Merge-Requests aufgerufen werden, wird die Pipeline direkt be
 ### Durch einen GitLab API-Call
 
 siehe https://docs.gitlab.com/ee/ci/triggers/
+
+### Durch eine andere Pipeline
+
+siehe https://docs.gitlab.com/ee/ci/pipelines/downstream_pipelines.html
 
 ### Pipelines und Jobs restarten 
 
