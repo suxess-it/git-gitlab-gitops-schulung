@@ -269,14 +269,15 @@ siehe https://docs.gitlab.com/ee/ci/pipelines/downstream_pipelines.html
 
 ### Pipelines und Jobs restarten 
 
-z.B. bei Fehlern ...
+Wenn Pipelines oder einzelne Jobs fehlgeschlagen sind, können sie auch wiederholt werden:
+
+![image](https://github.com/user-attachments/assets/d4548c09-50bb-4188-acb1-7f8cca134813)
 
 ### Pipelines Status in Commits-Übersicht
 
 Auch in der Commits-Übersicht sieht man ob die Pipelines erfolgreich waren:
 
 ![image](https://github.com/user-attachments/assets/e2b2df99-d176-4aab-969c-91a42386df14)
-
 
 ## Pipeline weiter konfigurieren
 
@@ -322,4 +323,5 @@ Man kann auch Logik von Pipelines in sogenannten Components wiederverwendbar mac
 
 siehe https://docs.gitlab.com/ee/ci/yaml/index.html
 Predefined Variables: https://docs.gitlab.com/ee/ci/variables/predefined_variables.html
+Kubernetes Executor als Pipeline Runner: https://docs.gitlab.com/runner/executors/kubernetes/
 
