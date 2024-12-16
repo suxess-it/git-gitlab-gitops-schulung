@@ -367,6 +367,8 @@ Runner werden üblicherweise von den GitLab-Administratoren zur Verfügung geste
 
 ![image](https://github.com/user-attachments/assets/b26eef8f-39e6-4a48-b5aa-f7512078b725)
 
+Zusätzlich kann man über [Tags](https://docs.gitlab.com/ee/ci/yaml/#tags) einschränken welcher Job auf welchem Runner laufen soll.
+
 ## Pipeline Components
 
 Man kann auch Logik von Pipelines in sogenannten Components wiederverwendbar machen: https://docs.gitlab.com/ee/ci/components/
