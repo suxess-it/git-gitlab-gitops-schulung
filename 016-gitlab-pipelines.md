@@ -46,7 +46,7 @@ stages:
 format-check-job:
   stage: lint
   script:
-    - echo "ich checke die formatierung
+    - echo "ich checke die formatierung"
 
 syntax-check-job:
   stage: lint
