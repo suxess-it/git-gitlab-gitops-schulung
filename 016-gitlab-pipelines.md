@@ -142,7 +142,14 @@ z.B. bei Fehlern ...
 
 ### ?
 
-## Runner Cache
+## GitLab-Runner
+
+Runner werden üblicherweise von den GitLab-Administratoren zur Verfügung gestellt und registriert. Wenn man wissen will welche Runner im Projekt zur Verfügung stehen, kann man unter "Settings" --> "CI/CD" --> "Runners" nachschauen:
+
+![image](https://github.com/user-attachments/assets/b26eef8f-39e6-4a48-b5aa-f7512078b725)
+
+
+### Runner Cache
 
 ???
 
