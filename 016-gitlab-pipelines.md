@@ -152,13 +152,31 @@ Dann werden die Pipelines und Jobs nur mehr ausgeführt, wenn die  jeweilige Reg
 
 Mit sog. Workflow-Rules bestimmt man, ob die Pipeline überhaupt erstellt wird.
 
-Beispiel:
+Beispiele:
 
 ```
 workflow:
   rules:
     - if: $CI_PIPELINE_SOURCE == "web"
       when: never
+    - when: always
+```
+Was bedeutet diese Rule? Probiers aus!
+
+Sollte dasselbe sein wie:
+
+```
+workflow:
+  rules:
+    - if: $CI_PIPELINE_SOURCE != "web"
+```
+
+Pipeline soll nur bei Merge-Request laufen:
+
+```
+workflow:
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
 ```
 
 siehe https://docs.gitlab.com/ee/ci/yaml/workflow.html
