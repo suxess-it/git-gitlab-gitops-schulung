@@ -117,12 +117,35 @@ Wenn man auf die Pipeline klickt (Status-Symbol in erster Spalte oder auf die Pi
 
 ### Manuell
 
+Pipelines können auch manuell gestartet werden über den Menüpunkt "Build" --> "Pipelines -- "Run Pipeline"
+
+![image](https://github.com/user-attachments/assets/5740685b-0c55-4dcc-9e32-1ccca6337d24)
+
+Dann den Branch auswählen und ggf. Variablen definieren:
+
+![image](https://github.com/user-attachments/assets/0b060dcc-5880-4226-9c9a-6c4d66be13fe)
+
 
 ### Gescheduled
 
+Im Menü über "Build" --> "Pipeline Schedules" --> "New Schedule" 
+
+![image](https://github.com/user-attachments/assets/c7336fd5-5b57-4421-ac73-7003ec13ecb0)
 
 ### Getriggered bei Git-Events
 
+Standardmäßig werden Pipelines bei jeder Änderung in Git getriggert. Wenn man hier expliziertere Regeln anwenden will, muss man Rules definieren.
+
+### Rules
+
+TODO Beispiele
+
+
+siehe https://docs.gitlab.com/ee/ci/yaml/index.html#rules
+
+Keyword `only` und `except` sind legacy. Können weiterhin verwendet werden, aber nicht in Kombination mit `rules`.
+
+### Merge-Requests
 
 Wenn Pipelines bei Merge-Requests aufgerufen werden, wird die Pipeline direkt beim MR anzeigt:
 
