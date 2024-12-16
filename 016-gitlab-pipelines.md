@@ -285,13 +285,33 @@ Auch in der Commits-Übersicht sieht man ob die Pipelines erfolgreich waren:
 
 siehe https://docs.gitlab.com/ee/ci/yaml/index.html#default
 
-image:
-before_script:
-after_script:
+Beispiel:
+
+```
+default:
+  image:
+  before_script:
+  after_script:
+```
 
 ### Manuelle Bestätigung einbauen
 
 siehe manual_confirmation: 'Are you sure you want to delete this environment?'
+
+```
+deploy-job:
+  stage: deploy
+  rules:
+  - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+    when: manual
+  manual_confirmation: "Are you sure you want to deploy?"
+  script:
+    - echo "ich deploye die software"
+```
+
+Führt dazu dass jemand manuell den Step nochmal bestätigen muss:
+
+![image](https://github.com/user-attachments/assets/431ced15-0988-479b-8b78-77889cc9167a)
 
 ### Variablen
 
