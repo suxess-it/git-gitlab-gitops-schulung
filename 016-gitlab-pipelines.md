@@ -132,9 +132,15 @@ Im Menü über "Build" --> "Pipeline Schedules" --> "New Schedule"
 
 ![image](https://github.com/user-attachments/assets/c7336fd5-5b57-4421-ac73-7003ec13ecb0)
 
-### Getriggered bei Git-Events
+### Bei Git-Events
 
 Standardmäßig werden Pipelines bei jeder Änderung in Git getriggert. Wenn man hier expliziertere Regeln anwenden will, muss man Rules definieren.
+
+
+### Durch einen GitLab API-Call
+
+siehe https://docs.gitlab.com/ee/ci/triggers/
+
 
 ### Rules
 
