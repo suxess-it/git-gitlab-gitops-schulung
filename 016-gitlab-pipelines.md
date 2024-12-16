@@ -148,6 +148,7 @@ workflow:
     - if: $CI_PIPELINE_SOURCE == "schedule"
       when: never
 ```
+
 siehe https://docs.gitlab.com/ee/ci/yaml/workflow.html
 
 Mit sog. Job-Rules bestimmt man, ob der Job in dieser Pipeline aufgerufen wird.
@@ -184,6 +185,10 @@ siehe https://docs.gitlab.com/ee/ci/yaml/index.html#default
 image:
 before_script:
 after_script:
+
+### Manuelle Bestätigung einbauen
+
+siehe manual_confirmation: 'Are you sure you want to delete this environment?'
 
 ### Variablen
 
