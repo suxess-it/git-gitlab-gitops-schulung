@@ -115,6 +115,8 @@ Wenn man auf die Pipeline klickt (Status-Symbol in erster Spalte oder auf die Pi
 
 ## Wann werden Pipelines aufgerufen
 
+Pipelines können durch unterschiedliche Events getartet werden.
+
 ### Manuell
 
 Pipelines können manuell gestartet werden über den Menüpunkt "Build" --> "Pipelines -- "Run Pipeline"
@@ -133,10 +135,18 @@ Im Menü über "Build" --> "Pipeline Schedules" --> "New Schedule"
 
 ### Bei Git-Events
 
-Standardmäßig werden Pipelines bei jeder Änderung in Git getriggert. Wenn man hier expliziertere Regeln anwenden will, muss man Rules definieren.
-Dann werden die Pipelines und Jobs nur mehr ausgeführt, wenn die  jeweilige Regel erfüllt ist.
+Standardmäßig werden Pipelines bei jeder Änderung in Git getriggert. Das führt dazu, dass Pipelines standardmäßig sehr oft ausgeführt werden.
+Bei einer "normalen" Code-Änderung über einen Feature-Branch z.B. mindestens 3 mal:
 
-[CI_PIPELINE_SOURCE Möglichkeiten](https://docs.gitlab.com/ee/ci/jobs/job_rules.html#ci_pipeline_source-predefined-variable)
+* beim Git Push auf den Feature-Branch
+* Beim Erstellen vom Merge-Request
+* Beim Merge-Commit auf den main-Branch
+
+![image](https://github.com/user-attachments/assets/a360fa98-a7a2-41f7-91e8-4cc6141559e7)
+
+
+Wenn man hier expliziertere Regeln anwenden will, muss man Rules definieren.
+Dann werden die Pipelines und Jobs nur mehr ausgeführt, wenn die  jeweilige Regel erfüllt ist.
 
 #### Workflow-Rules
 
@@ -147,7 +157,7 @@ Beispiel:
 ```
 workflow:
   rules:
-    - if: $CI_PIPELINE_SOURCE == "schedule"
+    - if: $CI_PIPELINE_SOURCE == "web"
       when: never
 ```
 
@@ -157,6 +167,7 @@ Mit sog. Job-Rules bestimmt man, ob der Job in dieser Pipeline aufgerufen wird.
 
 siehe https://docs.gitlab.com/ee/ci/yaml/index.html#rules
 
+[weitere CI_PIPELINE_SOURCE Möglichkeiten](https://docs.gitlab.com/ee/ci/jobs/job_rules.html#ci_pipeline_source-predefined-variable)
 
 Keyword `only` und `except` sind legacy. Können weiterhin verwendet werden, aber nicht in Kombination mit `rules`.
 
