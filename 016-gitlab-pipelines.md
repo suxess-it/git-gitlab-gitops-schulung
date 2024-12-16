@@ -158,7 +158,13 @@ z.B. bei Fehlern ...
 
 ## Pipeline weiter konfigurieren
 
-### Images
+### Defaults
+
+siehe https://docs.gitlab.com/ee/ci/yaml/index.html#default
+
+image:
+before_script:
+after_script:
 
 ### Variablen
 
