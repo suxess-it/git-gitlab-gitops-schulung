@@ -322,6 +322,13 @@ Führt dazu dass jemand manuell den Step nochmal bestätigen muss:
 Unkritische Variablen können direkt in der .gitlab-ci.yml definiert werden, siehe https://docs.gitlab.com/ee/ci/variables/ .
 Diese Variablen können auch bei manuellem starten der Pipeline überschrieben werden.
 
+Beispiel: meine Scripts haben alle ein Debug-Flag und dieses möchte ich zentral in allen Jobs setzen
+
+```
+variables:
+  DEBUG_ON: true
+```
+
 Achtung: Sicherheitskritische Variablen, z.B. Access-Tokens zu seiner Cloud-Infrastruktur, sollen nicht im .gitlab-ci.yml setzen sondern in der [GitLab UI](https://docs.gitlab.com/ee/ci/variables/#define-a-cicd-variable-in-the-ui).
 
 ![image](https://github.com/user-attachments/assets/152d8046-3688-4773-b284-6b1ba9a055c8)
