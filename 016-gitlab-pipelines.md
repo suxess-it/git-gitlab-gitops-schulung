@@ -180,16 +180,80 @@ workflow:
 ```
 
 siehe https://docs.gitlab.com/ee/ci/yaml/workflow.html
+[weitere CI_PIPELINE_SOURCE Möglichkeiten](https://docs.gitlab.com/ee/ci/jobs/job_rules.html#ci_pipeline_source-predefined-variable)
+
+#### Job-Rules
 
 Mit sog. Job-Rules bestimmt man, ob der Job in dieser Pipeline aufgerufen wird.
+Das kommt häufiger vor als das deaktivieren der ganzen Pipeline, weil man unterschiedliche Jobs bei unterschiedlichen Git-Events ausführen will.
 
-siehe https://docs.gitlab.com/ee/ci/yaml/index.html#rules
+Beispiel:
 
-[weitere CI_PIPELINE_SOURCE Möglichkeiten](https://docs.gitlab.com/ee/ci/jobs/job_rules.html#ci_pipeline_source-predefined-variable)
+```
+stages:
+  - lint
+  - build
+  - test
+  - deploy
+  - post-deploy
+
+format-check-job:
+  stage: lint
+  script:
+    - echo "ich checke die formatierung"
+
+syntax-check-job:
+  stage: lint
+  script:
+    - echo "ich checke den syntax"
+
+code-analyse-job:
+  stage: lint
+  script:
+    - echo "ich mache statische code-analyse"
+
+build-job:
+  stage: build
+  rules:
+  - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+  - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  script:
+    - echo "ich baue die software"
+
+test-job:
+  stage: test
+  rules:
+  - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+  - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  script:
+    - echo "ich teste die software"
+
+deploy-job:
+  stage: deploy
+  rules:
+  - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  script:
+    - echo "ich deploye die software"
+
+post-deploy-test-job:
+  stage: post-deploy
+  rules:
+  - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  script:
+    - echo "ich teste die applikation nach dem deployment"
+```
+
+Wann werden hier welche Jobs ausgeführt? Probiere es aus!
+
+![image](https://github.com/user-attachments/assets/d4caedcb-04eb-41b6-92cc-8f73fe4ae8a6)
+
+
+siehe https://docs.gitlab.com/ee/ci/jobs/job_rules.html
+und https://docs.gitlab.com/ee/ci/yaml/index.html#rules
 
 Keyword `only` und `except` sind legacy. Können weiterhin verwendet werden, aber nicht in Kombination mit `rules`.
 
-#### Merge-Requests
+#### Pipelines direkt in Merge-Requests ersichtlich
 
 Wenn Pipelines bei Merge-Requests aufgerufen werden, wird die Pipeline direkt beim MR anzeigt:
 
