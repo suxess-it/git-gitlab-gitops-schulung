@@ -271,6 +271,13 @@ siehe https://docs.gitlab.com/ee/ci/pipelines/downstream_pipelines.html
 
 z.B. bei Fehlern ...
 
+### Pipelines Status in Commits-Übersicht
+
+Auch in der Commits-Übersicht sieht man ob die Pipelines erfolgreich waren:
+
+![image](https://github.com/user-attachments/assets/e2b2df99-d176-4aab-969c-91a42386df14)
+
+
 ## Pipeline weiter konfigurieren
 
 ### Defaults
