@@ -80,3 +80,46 @@ post-deploy-test-job:
 ```
 
 Weitere Details und Beispiele: https://docs.gitlab.com/ee/ci/pipelines/pipeline_architectures.html#basic-pipelines
+
+
+## Status von Jobs und Pipelines checken
+
+![image](https://github.com/user-attachments/assets/0355ae20-b08b-4c06-b2b7-15c497269f7c)
+
+Was sieht man in diesem Bild?
+
+* Status: wartet die Pipeline (Pending), läuft sie (Running), erfolgreich abgeschlossen (Passed) oder mit Fehler abgebrochen (Failed)
+* Pipeline:
+    * Commit-Message (erste Zeile)
+    * Pipeline-ID (in unserem Fall `#23429`): klicke darauf um Details zur Pipeline zu sehen
+    * Branch (`feat/create-pipeline`)
+    * Commit (`dc81136e`)
+    * Committer-Avatar
+    * Latest ( ? )
+* Created by: Wer hat die Pipeline gestartet? (meistens der Committer)
+* Stages: erfolgreich oder nicht
+
+
+## Wann werden Pipelines aufgerufen
+
+### Manuell
+
+
+### Gescheduled
+
+
+### Getriggered bei Git-Events
+
+### Pipelines und Jobs restarten 
+
+z.B. bei Fehlern ...
+
+## Pipeline weiter konfigurieren
+
+### Images
+
+### Variablen
+
+
+### ?
+
