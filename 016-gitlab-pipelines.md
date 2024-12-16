@@ -136,25 +136,20 @@ Im Menü über "Build" --> "Pipeline Schedules" --> "New Schedule"
 
 Standardmäßig werden Pipelines bei jeder Änderung in Git getriggert. Wenn man hier expliziertere Regeln anwenden will, muss man Rules definieren.
 
-
-### Durch einen GitLab API-Call
-
-siehe https://docs.gitlab.com/ee/ci/triggers/
-
-
-### Rules
-
 siehe https://docs.gitlab.com/ee/ci/yaml/workflow.html
 siehe https://docs.gitlab.com/ee/ci/yaml/index.html#rules
 
 Keyword `only` und `except` sind legacy. Können weiterhin verwendet werden, aber nicht in Kombination mit `rules`.
 
-### Merge-Requests
+#### Merge-Requests
 
 Wenn Pipelines bei Merge-Requests aufgerufen werden, wird die Pipeline direkt beim MR anzeigt:
 
 ![image](https://github.com/user-attachments/assets/894d3d06-adc6-4fc8-81f7-627803182143)
 
+### Durch einen GitLab API-Call
+
+siehe https://docs.gitlab.com/ee/ci/triggers/
 
 ### Pipelines und Jobs restarten 
 
