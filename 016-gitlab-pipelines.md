@@ -139,6 +139,11 @@ z.B. bei Fehlern ...
 
 ### Variablen
 
+#### Predefined Variables
+
+siehe 
+
+### Abhängigkeiten definieren ("needs")
 
 ### ?
 
@@ -152,4 +157,8 @@ Runner werden üblicherweise von den GitLab-Administratoren zur Verfügung geste
 ### Runner Cache
 
 ???
+
+## Pipeline Syntax Referenz
+
+siehe https://docs.gitlab.com/ee/ci/yaml/index.html
 
