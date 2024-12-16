@@ -120,6 +120,12 @@ Was sieht man in diesem Bild?
 
 ### Getriggered bei Git-Events
 
+
+Wenn Pipelines bei Merge-Requests aufgerufen werden, wird die Pipeline direkt beim MR anzeigt:
+
+![image](https://github.com/user-attachments/assets/894d3d06-adc6-4fc8-81f7-627803182143)
+
+
 ### Pipelines und Jobs restarten 
 
 z.B. bei Fehlern ...
