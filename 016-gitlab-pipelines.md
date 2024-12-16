@@ -138,9 +138,7 @@ Standardmäßig werden Pipelines bei jeder Änderung in Git getriggert. Wenn man
 
 ### Rules
 
-TODO Beispiele
-
-
+siehe https://docs.gitlab.com/ee/ci/yaml/workflow.html
 siehe https://docs.gitlab.com/ee/ci/yaml/index.html#rules
 
 Keyword `only` und `except` sind legacy. Können weiterhin verwendet werden, aber nicht in Kombination mit `rules`.
