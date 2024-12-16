@@ -355,6 +355,8 @@ Das können nur Variablen sein, aber auch ganze Jobs.
 
 Aufgabe: einer von euch erstellt eine Pipeline und die anderen includen sie, und fügen nur bei einer gewissen Stage einen zusätzlichen Job hinzu.
 
+Includes können auch Inputs definieren, siehe https://docs.gitlab.com/ee/ci/yaml/inputs.html
+
 siehe https://docs.gitlab.com/ee/ci/yaml/includes.html
 
 ### Artifacts und Cache
