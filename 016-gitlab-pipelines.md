@@ -1,5 +1,15 @@
 # GitLab Pipelines
 
+In der GitLab UI sind alle wesentlichen Informationen zu Pipelines unter dem Menüpunkt "Build" zu finden:
+
+![image](https://github.com/user-attachments/assets/dfc376db-d48a-4208-b694-ac432fc08fea)
+
+* Pipelines: alle Pipelines die in diesem Projekt gelaufen sind
+* Jobs: alle Jobs die in diesem Repository gelaufen sind (mit Referenz zur jeweiligen Pipeline)
+* Pipeline-Editor: siehe weiter unten
+* Pipeline schedules: Aufruf zyklisch einplanen
+* Artifacts: jede Pipeline erzeugt Artefakte, die man sich im Nachhinein anschauen kann
+
 ## Erstes .gitlab-ci.yml
 
 Ein Grundbaustein jeder Pipeline ist ein `Job`. Jobs werden einfach so im .gitlab-ci.yml definiert:
