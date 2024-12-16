@@ -147,16 +147,18 @@ siehe
 
 ### ?
 
+### Artifacts und Cache
+
+Mit [Artifacts](https://docs.gitlab.com/ee/ci/yaml/index.html#artifacts) kann man Files erstellen, die dann in der GitLab-UI zu dem Job/Pipeline heruntergeladen werden können.
+
+Mit [Caches](https://docs.gitlab.com/ee/ci/yaml/index.html#cache) kann man Daten zwischen Jobs und Pipelines wiederverwenden. siehe auch https://docs.gitlab.com/ee/ci/caching/index.html
+
 ## GitLab-Runner
 
 Runner werden üblicherweise von den GitLab-Administratoren zur Verfügung gestellt und registriert. Wenn man wissen will welche Runner im Projekt zur Verfügung stehen, kann man unter "Settings" --> "CI/CD" --> "Runners" nachschauen:
 
 ![image](https://github.com/user-attachments/assets/b26eef8f-39e6-4a48-b5aa-f7512078b725)
 
-
-### Runner Cache
-
-???
 
 ## Pipeline Syntax Referenz
 
