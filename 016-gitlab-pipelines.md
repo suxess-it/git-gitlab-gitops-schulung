@@ -247,7 +247,6 @@ Wann werden hier welche Jobs ausgeführt? Probiere es aus!
 
 ![image](https://github.com/user-attachments/assets/d4caedcb-04eb-41b6-92cc-8f73fe4ae8a6)
 
-
 siehe https://docs.gitlab.com/ee/ci/jobs/job_rules.html
 und https://docs.gitlab.com/ee/ci/yaml/index.html#rules
 
@@ -283,16 +282,20 @@ Auch in der Commits-Übersicht sieht man ob die Pipelines erfolgreich waren:
 
 ### Defaults
 
-siehe https://docs.gitlab.com/ee/ci/yaml/index.html#default
+Klassische Default sind die Definition eines Container-Images das in jedem Job verwendet werden soll oder Pre- und Post-Scripts für jeden Job.
 
 Beispiel:
 
 ```
 default:
-  image:
+  image: alpine:latest
   before_script:
+    - echo "Starte Job ..."
   after_script:
+    - echo "Beende Job ..."
 ```
+
+siehe https://docs.gitlab.com/ee/ci/yaml/index.html#default
 
 ### Manuelle Bestätigung einbauen
 
@@ -315,13 +318,35 @@ Führt dazu dass jemand manuell den Step nochmal bestätigen muss:
 
 ### Variablen
 
+Über Variablen kann der Ablauf von Pipelines gesteuert werden und auch die Tools / Scripts innerhalb eines Job können diese Variablen einlesen.
+Unkritische Variablen können direkt in der .gitlab-ci.yml definiert werden, siehe https://docs.gitlab.com/ee/ci/variables/ .
+Diese Variablen können auch bei manuellem starten der Pipeline überschrieben werden.
+
+Achtung: Sicherheitskritische Variablen, z.B. Access-Tokens zu seiner Cloud-Infrastruktur, sollen nicht im .gitlab-ci.yml setzen sondern in der [GitLab UI](https://docs.gitlab.com/ee/ci/variables/#define-a-cicd-variable-in-the-ui).
+
+![image](https://github.com/user-attachments/assets/152d8046-3688-4773-b284-6b1ba9a055c8)
+
+"Protect variables" sind nur in "protected Branches" verfügbar, damit niemand diese Variablen in einem Feature-Branch auslesen und bei sich lokal verwenden kann!
+
+Wichtig: Änderungen an .gitlab-ci.yml Files immer speziell beim Merge-Request-Review beachten und auf Zugriff und Weitergabe von kritischen Variablen prüfen.
+
 #### Predefined Variables
 
-siehe 
+siehe https://docs.gitlab.com/ee/ci/variables/predefined_variables.html
 
 ### Abhängigkeiten definieren ("needs")
 
+Mit dem `needs` Keyword kann man explizit definieren welche Jobs vor diesem Job ausgeführt sein müssen, um diesen dann eventuell schneller starten zu lassen aber trotzdem alle Vorbedingungen zu erfüllen. (startet dann früher als die gesamte Stage)
+siehe https://docs.gitlab.com/ee/ci/yaml/needs.html
+
 ### Includes
+
+Gewisse Teile eines .gitlab-ci.yml können auch in andere Files (in anderen Repos) ausgelagert werden und eingebunden werden.
+Das können nur Variablen sein, aber auch ganze Jobs.
+
+Aufgabe: einer von euch erstellt eine Pipeline und die anderen includen sie, und fügen nur bei einer gewissen Stage einen zusätzlichen Job hinzu.
+
+siehe https://docs.gitlab.com/ee/ci/yaml/includes.html
 
 ### Artifacts und Cache
 
