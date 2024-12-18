@@ -379,7 +379,8 @@ Man kann auch Logik von Pipelines in sogenannten Components wiederverwendbar mac
 
 ## VSCode Extensions 
 
-siehe https://docs.gitlab.com/ee/editor_extensions/visual_studio_code/
+siehe https://docs.gitlab.com/ee/editor_extensions/visual_studio_code/ (speziell auch für [Pipelines](https://docs.gitlab.com/ee/editor_extensions/visual_studio_code/cicd.html))
+
 
 ## Pipeline Syntax Referenz
 
