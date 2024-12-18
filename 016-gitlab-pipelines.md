@@ -377,9 +377,13 @@ Zusätzlich kann man über [Tags](https://docs.gitlab.com/ee/ci/yaml/#tags) eins
 
 Man kann auch Logik von Pipelines in sogenannten Components wiederverwendbar machen: https://docs.gitlab.com/ee/ci/components/
 
+## VSCode Extensions 
+
+siehe https://docs.gitlab.com/ee/editor_extensions/visual_studio_code/
+
 ## Pipeline Syntax Referenz
 
-siehe https://docs.gitlab.com/ee/ci/yaml/index.html
-Predefined Variables: https://docs.gitlab.com/ee/ci/variables/predefined_variables.html
-Kubernetes Executor als Pipeline Runner: https://docs.gitlab.com/runner/executors/kubernetes/
+* siehe https://docs.gitlab.com/ee/ci/yaml/index.html
+* Predefined Variables: https://docs.gitlab.com/ee/ci/variables/predefined_variables.html
+* Kubernetes Executor als Pipeline Runner: https://docs.gitlab.com/runner/executors/kubernetes/
 
