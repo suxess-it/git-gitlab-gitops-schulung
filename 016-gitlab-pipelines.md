@@ -185,7 +185,7 @@ siehe https://docs.gitlab.com/ee/ci/yaml/workflow.html
 #### Job-Rules
 
 Mit sog. Job-Rules bestimmt man, ob der Job in dieser Pipeline aufgerufen wird.
-Das kommt häufiger vor als das deaktivieren der ganzen Pipeline, weil man unterschiedliche Jobs bei unterschiedlichen Git-Events ausführen will.
+Das kommt häufiger vor als das Deaktivieren der ganzen Pipeline, weil man unterschiedliche Jobs bei unterschiedlichen Git-Events ausführen will.
 
 Beispiel:
 
