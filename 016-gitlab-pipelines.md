@@ -318,6 +318,8 @@ Führt dazu dass jemand manuell den Step nochmal bestätigen muss:
 
 ![image](https://github.com/user-attachments/assets/431ced15-0988-479b-8b78-77889cc9167a)
 
+Wenn man einschränken will, wer berechtigt ist den Job zu bestätigen, kann man manuelle Jobs auch [protecten](https://docs.gitlab.com/ee/ci/jobs/job_control.html#protect-manual-jobs)
+
 ### Variablen
 
 Über Variablen kann der Ablauf von Pipelines gesteuert werden und auch die Tools / Scripts innerhalb eines Job können diese Variablen einlesen.
