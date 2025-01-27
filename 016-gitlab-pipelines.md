@@ -8,7 +8,7 @@ In der GitLab UI sind alle wesentlichen Informationen zu Pipelines unter dem Men
 * Jobs: alle Jobs die in diesem Repository gelaufen sind (mit Referenz zur jeweiligen Pipeline)
 * Pipeline-Editor: siehe weiter unten
 * Pipeline schedules: Aufruf zyklisch einplanen
-* Artifacts: jede Pipeline erzeugt Artefakte, die man sich im Nachhinein anschauen kann
+* Artifacts: jede Pipeline erzeugt Artefakte, die man sich im Nachhinein anschauen kann (per Default das job.log, kann mit [artifacts.paths](https://docs.gitlab.com/ee/ci/jobs/job_artifacts.html#create-job-artifacts) aber erweitert werden)
 
 ## Erstes .gitlab-ci.yml
 
