@@ -4,12 +4,15 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="jI3Ix_tc2KdG7ey6dFIE-47" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillStyle=solid;dashed=1;dashPattern=8 8;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="140" width="550" x="100" y="300" as="geometry" />
+        </mxCell>
         <mxCell id="fSnZ5vnYTslC5NarKmr_-11" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=33;fontColor=#000000;" value="GitOps-Workflow" vertex="1">
           <mxGeometry height="40" width="538" x="230" y="40" as="geometry" />
         </mxCell>
-        <UserObject label="Example Workflow for GitOps-Promotion:" link="https://nvie.com/posts/a-successful-git-branching-model/" id="9hBKPDzoitwpIBdzFDQ7-2">
+        <UserObject label="Beispiel-Workflow für GitOps-Promotion mit Merge-Commits in die Stage-Branches (mit oder ohne PR)" link="https://nvie.com/posts/a-successful-git-branching-model/" id="9hBKPDzoitwpIBdzFDQ7-2">
           <mxCell parent="1" style="text;whiteSpace=wrap;html=1;fontStyle=1;fontSize=16;" vertex="1">
-            <mxGeometry height="20" width="330" x="70" y="110" as="geometry" />
+            <mxGeometry height="20" width="800" x="70" y="110" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="9hBKPDzoitwpIBdzFDQ7-23" edge="1" parent="1" source="9hBKPDzoitwpIBdzFDQ7-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;plain-blue;endArrow=none;endFill=0;strokeWidth=4;strokeColor=#000000;" target="9hBKPDzoitwpIBdzFDQ7-26" value="">
@@ -57,9 +60,6 @@
         </mxCell>
         <mxCell id="9hBKPDzoitwpIBdzFDQ7-35" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=14;fontStyle=1;fontFamily=Courier New;" value="feat/add-more-replicas" vertex="1">
           <mxGeometry height="20" width="240" x="127.5" y="390" as="geometry" />
-        </mxCell>
-        <mxCell id="9hBKPDzoitwpIBdzFDQ7-37" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=14;fontStyle=0;fontColor=#009900;" value="The main branch&lt;br&gt;" vertex="1">
-          <mxGeometry height="20" width="132.25" x="125.25" y="330" as="geometry" />
         </mxCell>
         <mxCell id="9hBKPDzoitwpIBdzFDQ7-38" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=14;fontStyle=0;fontColor=#009900;" value="Your feature branch" vertex="1">
           <mxGeometry height="20" width="202.25" x="126.25" y="415" as="geometry" />
@@ -153,11 +153,85 @@
             <mxPoint x="302.25" y="174.79999999999995" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <UserObject label="Merge in Stage-Branches über Kargo" link="https://nvie.com/posts/a-successful-git-branching-model/" id="jI3Ix_tc2KdG7ey6dFIE-24">
+        <UserObject label="automatisierte Commits" link="https://nvie.com/posts/a-successful-git-branching-model/" id="jI3Ix_tc2KdG7ey6dFIE-24">
           <mxCell parent="1" style="text;whiteSpace=wrap;html=1;fontStyle=0;fontSize=16;" vertex="1">
-            <mxGeometry height="20" width="330" x="800" y="245" as="geometry" />
+            <mxGeometry height="20" width="180" x="880" y="200" as="geometry" />
           </mxCell>
         </UserObject>
+        <mxCell id="jI3Ix_tc2KdG7ey6dFIE-25" edge="1" parent="1" source="jI3Ix_tc2KdG7ey6dFIE-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;plain-blue;endArrow=none;endFill=0;strokeWidth=4;strokeColor=#000000;" target="jI3Ix_tc2KdG7ey6dFIE-28" value="">
+          <mxGeometry x="294.5" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="jI3Ix_tc2KdG7ey6dFIE-26" edge="1" parent="1" source="jI3Ix_tc2KdG7ey6dFIE-27" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;html=1;exitX=1;exitY=0.5;exitPerimeter=0;entryX=0;entryY=0.5;entryPerimeter=0;endArrow=none;endFill=0;jettySize=auto;orthogonalLoop=1;strokeWidth=4;fontSize=15;" target="jI3Ix_tc2KdG7ey6dFIE-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jI3Ix_tc2KdG7ey6dFIE-27" parent="1" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=4;shape=mxgraph.flowchart.on-page_reference;plain-blue;gradientColor=none;fillColor=#B5E3Fe;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="274.5" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="jI3Ix_tc2KdG7ey6dFIE-28" parent="1" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=4;shape=mxgraph.flowchart.on-page_reference;plain-blue;gradientColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="564.5" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="jI3Ix_tc2KdG7ey6dFIE-29" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;endArrow=none;endFill=0;" target="jI3Ix_tc2KdG7ey6dFIE-27" value="">
+          <mxGeometry x="194.5" y="700" as="geometry">
+            <mxPoint x="210" y="595" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jI3Ix_tc2KdG7ey6dFIE-30" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=14;fontStyle=1;fontFamily=Courier New;" value="main" vertex="1">
+          <mxGeometry height="20" width="50" x="103.5" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="jI3Ix_tc2KdG7ey6dFIE-31" edge="1" parent="1" source="jI3Ix_tc2KdG7ey6dFIE-32" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;html=1;exitX=1;exitY=0.5;exitPerimeter=0;entryX=0;entryY=0.5;entryPerimeter=0;endArrow=none;endFill=0;jettySize=auto;orthogonalLoop=1;strokeWidth=4;fontSize=15;" target="jI3Ix_tc2KdG7ey6dFIE-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jI3Ix_tc2KdG7ey6dFIE-32" parent="1" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=4;shape=mxgraph.flowchart.on-page_reference;plain-purple;gradientColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="347.5" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="jI3Ix_tc2KdG7ey6dFIE-33" edge="1" parent="1" source="jI3Ix_tc2KdG7ey6dFIE-34" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;html=1;exitX=1;exitY=0.5;exitPerimeter=0;entryX=0;entryY=0.5;entryPerimeter=0;endArrow=none;endFill=0;jettySize=auto;orthogonalLoop=1;strokeWidth=4;fontSize=15;" target="jI3Ix_tc2KdG7ey6dFIE-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jI3Ix_tc2KdG7ey6dFIE-34" parent="1" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=4;shape=mxgraph.flowchart.on-page_reference;plain-purple;gradientColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="419.5" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="jI3Ix_tc2KdG7ey6dFIE-35" edge="1" parent="1" source="jI3Ix_tc2KdG7ey6dFIE-37" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;html=1;exitX=1;exitY=0.5;exitPerimeter=0;entryX=0;entryY=0.5;entryPerimeter=0;endArrow=none;endFill=0;jettySize=auto;orthogonalLoop=1;strokeWidth=4;fontSize=15;" target="jI3Ix_tc2KdG7ey6dFIE-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jI3Ix_tc2KdG7ey6dFIE-36" connectable="0" parent="jI3Ix_tc2KdG7ey6dFIE-35" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="squash and merge" vertex="1">
+          <mxGeometry relative="1" x="0.0082" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jI3Ix_tc2KdG7ey6dFIE-37" parent="1" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=4;shape=mxgraph.flowchart.on-page_reference;plain-purple;gradientColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="492.5" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="jI3Ix_tc2KdG7ey6dFIE-38" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=14;fontStyle=1;fontFamily=Courier New;" value="feat/add-more-replicas" vertex="1">
+          <mxGeometry height="20" width="240" x="97.5" y="665" as="geometry" />
+        </mxCell>
+        <mxCell id="jI3Ix_tc2KdG7ey6dFIE-39" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=14;fontStyle=0;fontColor=#009900;" value="The main branch&lt;br&gt;" vertex="1">
+          <mxGeometry height="20" width="132.25" x="95.25" y="605" as="geometry" />
+        </mxCell>
+        <mxCell id="jI3Ix_tc2KdG7ey6dFIE-40" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=14;fontStyle=0;fontColor=#009900;" value="Your feature branch" vertex="1">
+          <mxGeometry height="20" width="202.25" x="96.25" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="jI3Ix_tc2KdG7ey6dFIE-41" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=14;fontStyle=1;fontFamily=Courier New;" value="integration" vertex="1">
+          <mxGeometry height="20" width="97" x="527.5" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="jI3Ix_tc2KdG7ey6dFIE-42" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=14;fontStyle=1;fontFamily=Courier New;" value="qa" vertex="1">
+          <mxGeometry height="20" width="97" x="531" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="jI3Ix_tc2KdG7ey6dFIE-43" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=14;fontStyle=1;fontFamily=Courier New;" value="prod" vertex="1">
+          <mxGeometry height="20" width="97" x="241" y="540" as="geometry" />
+        </mxCell>
+        <UserObject label="eine lineare Commit-History mit fast-foward merge der stage-spezifischen Branches&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Vorteil:&lt;/div&gt;&lt;div&gt;- keine Merge-Commits&lt;/div&gt;&lt;div&gt;- im Commit des Stage-Branches steht der originale Feature-Commit&lt;/div&gt;&lt;div&gt;- ein linearer Commit-Verlauf zwingt dazu, dass Commits immer durch alle Stages gehen.&lt;/div&gt;" link="https://nvie.com/posts/a-successful-git-branching-model/" id="jI3Ix_tc2KdG7ey6dFIE-46">
+          <mxCell parent="1" style="text;whiteSpace=wrap;html=1;fontStyle=0;fontSize=16;" vertex="1">
+            <mxGeometry height="20" width="330" x="694.75" y="580" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="manuelle Commits" link="https://nvie.com/posts/a-successful-git-branching-model/" id="jI3Ix_tc2KdG7ey6dFIE-49">
+          <mxCell parent="1" style="text;whiteSpace=wrap;html=1;fontStyle=0;fontSize=16;" vertex="1">
+            <mxGeometry height="20" width="195.25" x="664.75" y="370" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="jI3Ix_tc2KdG7ey6dFIE-50" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillStyle=solid;dashed=1;dashPattern=8 8;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="140" width="770" x="100" y="145" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
